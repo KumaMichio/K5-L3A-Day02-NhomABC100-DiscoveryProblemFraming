@@ -147,16 +147,16 @@ Card #1 ban đầu là problem #2 (đề bài/hướng dẫn thay đổi sau khi
 
 | Hoạt động | Tôi đã làm gì? | Kết quả / ảnh hưởng tới bài nhóm |
 |---|---|---|
-| Pitch Problem Card | | |
-| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: | |
-| Nhận phản biện | Câu hỏi tôi nhận được: | Tôi đã sửa gì: |
-| Gom cluster / cây OST | | |
-| Chọn candidate problem | | |
-| Kiểm chứng / research | | |
-| Quy trình nhóm | | |
-| Problem Statement | | |
-| Mức can thiệp AI | | |
-| Quyết định | | |
+| Pitch Problem Card | Pitch 3 card (#1 bảng "Dùng AI" cuối buổi, #2 yêu cầu rải rác 8 file, #3 phối hợp repo chung) — dòng #1–#3 bảng pitch `group_report.md` mục 2.1 | Card #1, #2 vào cluster B, card #3 được gộp vào cluster A — cluster nhóm chọn |
+| Phản biện bài của bạn khác | Câu hỏi tôi đã đặt: [cần điền: câu hỏi tôi đã hỏi, cho card số mấy của ai] | [cần điền] |
+| Nhận phản biện | Câu hỏi tôi nhận được: [cần điền] | Tôi đã sửa gì: [cần điền] |
+| Gom cluster / cây OST | Người chính CP3: tổng hợp 12 candidate của 4 thành viên vào bảng pitch, gom 4 cluster (A–D), dựng cây OST 1 outcome – 4 opportunity, gạch bỏ 6 ý là solution đội lốt opportunity | `group_report.md` mục 2.1–2.3 |
+| Chọn candidate problem | Chấm điểm shortlist 3 candidate (A, B, #7); chỉ ra #7 có điểm cao nhất (33) nhưng trùng hướng với bài mẫu "báo cáo tuần", đề xuất A; ghi lý do chọn/loại | Nhóm thống nhất chọn **A — quyết định & trạng thái việc nhóm thất lạc trong chat**; ghi vào `group_report.md` mục 1, 2.4 và `TEAM.md` |
+| Kiểm chứng / research | Soạn bộ 11 câu hỏi khảo sát theo The Mom Test (`report/assets/cp4-survey-form.md`), script tạo Google Form có skip logic, và template interview snapshot (`report/assets/cp4-interview-snapshot-template.md`) | Bộ câu hỏi Q1–Q11 được nhóm dùng để thu 9 phản hồi thật (mục 3.2); Hoàng là người chính chạy kiểm chứng và research |
+| Quy trình nhóm | [cần điền nếu có tham gia] | |
+| Problem Statement | [cần điền nếu có tham gia] | |
+| Mức can thiệp AI | [cần điền nếu có tham gia] | |
+| Quyết định | [cần điền nếu có tham gia] | |
 
 ---
 
@@ -166,6 +166,8 @@ Card #1 ban đầu là problem #2 (đề bài/hướng dẫn thay đổi sau khi
 |---|---|---|---|---|
 | CP1 Scan | Claude quét repo, gợi ý thêm problem theo 4 lăng kính, đếm commit sửa đề và số từ tài liệu | Lấy được bằng chứng đo được từ `git log` và `wc -w` thay vì cảm giác | AI không biết số phút/tần suất thật của tôi — phần dấu hiệu cá nhân AI để trống, không bịa được | [cần điền: tự bổ sung số liệu thật, bỏ ý nào] |
 | CP2 Problem Card | Claude nháp 3 card + quy trình; đề xuất problem thay thế khi tôi bác card "đề thay đổi" | Gợi ý card "điền bảng Dùng AI" có bottleneck đo được và phương án No AI rõ | Ban đầu AI chọn card "đề thay đổi" vì có nhiều commit, nhưng không phân biệt commit trước buổi lab với thay đổi trong buổi lab — tôi phải tự chỉ ra; một số bước quy trình là AI suy luận | Đổi Card #1 sang problem #8; [cần điền: bước quy trình nào tôi sửa lại theo cách mình thực sự làm] |
+| CP3 Hội tụ (tổng hợp, không dùng cho pitch/phản biện) | Claude đọc 4 báo cáo cá nhân, nháp bảng pitch, cluster, cây OST và bảng chấm điểm để nhóm thảo luận | Gom nhanh 12 card, phát hiện ý "solution đội lốt opportunity" trong card; chỉ ra candidate #7 trùng hướng bài mẫu | AI chấm điểm dựa trên văn bản báo cáo, không biết nội dung thảo luận thật; ban đầu AI nháp cả lý do chọn/loại thay nhóm | Câu hỏi phản biện và quyết định chọn A do nhóm tự đưa ra trong buổi; [cần điền: điểm/lý do nào nhóm đã sửa so với nháp] |
+| CP4 Kiểm chứng (soạn công cụ) | Claude soạn bộ 11 câu hỏi khảo sát, template interview snapshot và script Google Apps Script tạo form | Câu hỏi bám hành vi đã xảy ra (7 ngày qua), có skip logic, có câu bắt tín hiệu phản bác (Q9) | Câu Q10 (mức phiền 1–5) vẫn là ý kiến, không phải hành vi; script chưa được AI chạy thử | [cần điền: tôi đã sửa câu hỏi nào trước khi gửi, ví dụ đổi "7 ngày qua" thành "những ngày đầu khóa"] |
 | CP4 Research | | | | |
 | CP5 Quy trình | | | | |
 | CP5–6 Problem Statement | | | | |
