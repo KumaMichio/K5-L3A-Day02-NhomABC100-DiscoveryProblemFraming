@@ -206,53 +206,65 @@ Ghi chú chấm:
 ### 4.1. Quy trình hiện tại
 
 Sơ đồ (ASCII, Mermaid hoặc link ảnh trong `report/assets/`):
-
+**Sơ đồ quy trình hiện tại:**
 ```text
+HIỆN TẠI — 8 bước, chưa có tổng thời gian đo đầy đủ, 8/8 bước thủ công
 
+[1 Phát sinh nhu cầu tìm lại thông tin]
+→ [2 Mở Zalo / Discord / Messenger]
+→ [3 Tìm từ khóa hoặc cuộn lịch sử chat]
+→ [4 Đọc nhiều tin nhắn để tìm đoạn thảo luận liên quan] ← BOTTLENECK
+→ [5 Phân biệt ý kiến đang bàn và quyết định đã chốt]
+→ [6 Đối chiếu tin ghim / biên bản / bảng phân công]
+→ [7 Hỏi lại thành viên nếu thông tin thiếu hoặc mâu thuẫn]
+→ [8 Xác nhận quyết định + người phụ trách + deadline + link tài liệu]
 ```
-
-| Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
-|---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-
-**Bottleneck chính:**
 
 ### 4.2. Quy trình tương lai
 
 Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người**, **boundary** ở đâu, **phương án quay về** khi AI sai.
 
 ```text
-
+[1 Copy đoạn chat / ghi chú cần chốt: 1']
+→ [2 Đưa nội dung vào Prompt chuẩn / NotebookLM: 0.5']
+→ [3 Trích xuất 4 trường thông tin + dẫn chứng nguồn: 0.5'] ← AI
+→ [4 Người phụ trách kiểm tra và sửa bản nháp: tối đa 2']
+→ [5 Xác nhận và đăng bản chốt lên tin ghim / bảng chung: 1'] ← CON NGƯỜI
+→ [6 Thành viên tra cứu bản chốt khi cần]
 ```
+BOUNDARY:
+AI chỉ trích xuất bản nháp từ nội dung được cung cấp; không tự kết luận ý kiến là quyết định đã chốt, không tự gán người phụ trách/deadline, không tự đăng bản chốt. Thông tin chưa rõ phải ghi "Chưa xác định" hoặc "Cần xác nhận". Người phụ trách kiểm tra và xác nhận trước khi sử dụng.
+
+PHƯƠNG ÁN QUAY VỀ:
+Nếu AI tóm tắt sai, thiếu dẫn chứng hoặc nhầm quyết định → bỏ bản nháp, đối chiếu chat gốc và lập bản chốt thủ công theo template 4 trường. Nếu công cụ AI không hoạt động → tiếp tục dùng tin ghim, biên bản và bảng phân công như quy trình hiện tại.
+
+**Ghi chú về thời gian:** CP4 đo thời gian tìm kiếm ở lần gần nhất, chưa đo tổng thời gian của toàn bộ quy trình. Mức 4–5 phút ở quy trình tương lai là ước tính thiết kế ban đầu (copy, nhập liệu, AI xử lý, kiểm tra và đăng bản chốt), cần bấm giờ trong pilot để xác nhận.
 
 ### 4.3. Before / after
 
 | Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
 |---|---:|---:|---|
-| Số bước | | | |
-| Tổng thời gian | | | |
-| Số bước thủ công | | | |
-| Bottleneck chính | | | |
-| Rủi ro mới phát sinh | | | |
+| Số bước | 8 | 6 | Gộp thao tác tìm kiếm và đối chiếu thành workflow chuẩn hóa. |
+| Tổng thời gian | Phổ biến 5–10 phút/lần tìm kiếm; có trường hợp trên 20 phút | Khoảng 4–5 phút | Target ban đầu; cần đo thực tế trong pilot. |
+| Bước thủ công | 8/8 | 3/6 | Copy đoạn chat, kiểm tra bản nháp, xác nhận và đăng bản chốt. |
+| Bottleneck | Đọc dò nhiều tin nhắn, phân biệt ý kiến và quyết định cuối cùng | Người phụ trách kiểm tra và xác nhận bản nháp | Bottleneck chuyển sang bước kiểm soát chất lượng, chấp nhận được để tránh AI chốt sai. |
+| Rủi ro mới | Thất lạc thông tin, quên cập nhật, dùng nhầm thông tin cũ | AI trích xuất sai, thiếu ngữ cảnh hoặc bản chốt không được cập nhật | Xử lý bằng dẫn chứng nguồn, boundary và Human-in-the-loop. |
 
+Số bước thủ công 3/6 tính theo các thao tác con người trực tiếp thực hiện trong workflow: copy dữ liệu, kiểm tra bản nháp, xác nhận/đăng bản chốt. Bước tra cứu ở cuối là thao tác sử dụng kết quả, không tính vào thời gian tạo bản chốt.
 ---
 
 ## 5. Problem Statement v0 (CP5)
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | |
+| **Actor** | Thành viên nhóm học tập/dự án khoảng 2–6 người, thường xuyên trao đổi công việc qua Zalo, Discord, Messenger hoặc Slack/Teams. |
+| **Quy trình** | Khi cần tìm lại thông tin, thành viên mở ứng dụng chat, tìm từ khóa/cuộn lịch sử, đọc lại thảo luận, phân biệt ý kiến và quyết định đã chốt, đối chiếu tin ghim/biên bản/bảng phân công và hỏi lại nếu cần. |
+| **Bottleneck** | Đọc dò nhiều tin nhắn để xác định quyết định cuối cùng và đối chiếu 4 trường thông tin: quyết định, người phụ trách, deadline, link tài liệu. Thông tin thường phân tán và các cách lưu hiện tại dễ bị quên cập nhật. |
+| **Impact** | 7/9 học viên (77,8%) phải tìm/hỏi lại từ 3 đến trên 5 lần trong những ngày đầu khóa; 6/9 (66,7%) mất từ 5 phút trở lên ở lần tìm gần nhất; 5/9 (55,6%) từng gặp tình trạng làm trùng, làm sai hoặc trễ việc trong tháng qua. |
+| **Success Metric** | Giảm thời gian tìm lại bản chốt từ mức phổ biến 5–10 phút/lần xuống mục tiêu dưới 2 phút; thời gian tạo và xác nhận bản chốt mới mục tiêu khoảng 4–5 phút. Đo bằng cách bấm giờ trong pilot 2 tuần, đồng thời theo dõi độ chính xác của 4 trường thông tin và số lần phải hỏi lại. |
+| **Boundary** | AI chỉ trích xuất bản nháp từ đoạn chat được cung cấp, phải có dẫn chứng nguồn; không tự kết luận quyết định, không tự gán người phụ trách/deadline, không tự đăng. Người phụ trách phải kiểm tra và xác nhận trước khi ghim/lưu. |
 
-Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng ý không:
+**Phản biện nhận được / câu hỏi nhóm cần tự kiểm tra:** Quy trình mới có thực sự tiết kiệm thời gian không, hay lại tạo thêm thao tác copy/paste và kiểm tra bản nháp? Nhóm đồng ý đây là rủi ro cần kiểm chứng. Vì vậy, ngoài metric thời gian tìm kiếm, nhóm bổ sung metric **thời gian tạo bản chốt, độ chính xác của 4 trường thông tin và tỷ lệ bản nháp được người phụ trách xác nhận mà không cần sửa lớn**. Nếu workflow nhanh hơn nhưng thường xuyên trích xuất sai hoặc bị bỏ quên cập nhật thì chưa thể xem là giải pháp thành công.
 
 -
 
