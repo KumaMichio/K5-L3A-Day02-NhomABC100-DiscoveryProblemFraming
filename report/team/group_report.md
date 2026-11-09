@@ -5,7 +5,7 @@
 
 ## 1. Thông tin nhóm
 
-- Tên nhóm:
+- Tên nhóm: ABC100
 - Thành viên: xem `TEAM.md`
 - Candidate problem được chọn (1 câu):
 - Quyết định cuối: Go / Not Yet / No-Go
@@ -18,9 +18,9 @@
 
 | # | Người đưa ra | Candidate (Job Story ngắn) | Actor | Bottleneck | Câu hỏi phản biện nhận được (ai hỏi) |
 |---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
+| 1 | Phan Sỹ Hùng | Khi cuối buổi lab phải điền bảng "Dùng AI", tôi muốn nhớ chính xác đã dùng AI ở đâu, AI sai gì, tôi sửa gì, để ghi đúng sự thật | Học viên AI20k (cả lớp) | Lục lịch sử chat và nhớ lại "AI sai gì / tôi sửa gì" trong 15' cuối buổi | |
+| 2 | Phan Sỹ Hùng | Khi điền một mục báo cáo lab, tôi muốn biết mọi yêu cầu của mục đó, để không mất điểm vì thiếu | Học viên AI20k | Gom yêu cầu của 1 mục từ 8 file hướng dẫn (~15.900 từ) | |
+| 3 | Phan Sỹ Hùng | Khi làm chung một repo, mỗi thành viên muốn biết file nào của mình và commit thế nào, để không ghi đè/conflict | Thành viên nhóm 3–4 người | Xử lý conflict khi nhiều người cùng sửa `group_report.md` | |
 | 4 | | | | | |
 | 5 | | | | | |
 | 6 | | | | | |
