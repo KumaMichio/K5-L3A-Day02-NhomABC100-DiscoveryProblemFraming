@@ -67,13 +67,13 @@ Bối cảnh: tôi là học viên chương trình AI20k (K5 · Level 3), mỗi 
 Quy trình nháp hiện tại:
 
 ```text
-HIỆN TẠI — 30-60 phút, 1 lần/lab, trong 15' cuối buổi
+HIỆN TẠI — ~60 phút, 1 lần/lab, trong 15' cuối buổi
 
-[1. Mở bảng "Dùng AI": __'] → [2. Nhớ checkpoint nào đã dùng AI: __']
-→ [3. Lục lịch sử chat từng app: __'] ← BOTTLENECK
-→ [4. Đọc lại, xác định AI giúp/sai gì: __'] ← BOTTLENECK
-→ [5. Nhớ mình đã sửa gì: __'] ← BOTTLENECK
-→ [6. Viết 4 cột: __']
+[1. Mở bảng "Dùng AI": 4'] → [2. Nhớ checkpoint nào đã dùng AI: 15']
+→ [3. Lục lịch sử chat từng app: 15'] ← BOTTLENECK
+→ [4. Đọc lại, xác định AI giúp/sai gì: 10'] ← BOTTLENECK
+→ [5. Nhớ mình đã sửa gì: 8'] ← BOTTLENECK
+→ [6. Viết 4 cột: 2-4']
 ```
 
 ### Problem Card #2
@@ -94,11 +94,11 @@ HIỆN TẠI — 30-60 phút, 1 lần/lab, trong 15' cuối buổi
 Quy trình nháp hiện tại:
 
 ```text
-HIỆN TẠI — 10 phút cho mỗi mục báo cáo
+HIỆN TẠI — 2-10 phút cho mỗi mục báo cáo
 
-[1. Mở template: __'] → [2. Đọc CHECKPOINTS: __'] → [3. Đọc worksheet: __']
-→ [4. Đối chiếu RUBRIC: __'] ← BOTTLENECK (gom yêu cầu từ nhiều file)
-→ [5. Xem bài mẫu: __'] → [6. Viết: __'] → [7. Tự kiểm: __']
+[1. Mở template: 2'] → [2. Đọc CHECKPOINTS: 4'] → [3. Đọc worksheet: 4']
+→ [4. Đối chiếu RUBRIC: 4'] ← BOTTLENECK (gom yêu cầu từ nhiều file)
+→ [5. Xem bài mẫu: 2'] → [6. Viết: 4'] → [7. Tự kiểm: 4']
 ```
 
 ### Problem Card #3
