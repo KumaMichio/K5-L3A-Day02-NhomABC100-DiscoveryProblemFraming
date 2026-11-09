@@ -54,7 +54,7 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
 - `report/team/group_report.md` mục 1 (candidate) và mục 2.1–2.4 (pitch, cluster, OST, chấm điểm, lý do chọn/loại).
-- Báo cáo cá nhân: `report/individual/2A202603420-PhanSyHung.md` mục 2–3.
+- Báo cáo cá nhân: `report/individual/2A202603420_PhanSyHung.md` mục 2–3.
 - Commit: [cần điền hash commit sau khi push]
 
 **Điều mình học được từ phần nhóm:**
