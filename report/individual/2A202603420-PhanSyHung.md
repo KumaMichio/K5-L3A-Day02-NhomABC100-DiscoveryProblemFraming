@@ -179,17 +179,29 @@ Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ ch
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
 
+Tôi hiểu được cách mà mọi người nhìn nhận 1 sự việc, vấn đề nào đó có tiềm năng trở thành 1 problem statement. Tôi học được cách mọi người đặt vấn đề, phản biện lại những vấn đề đã đưa ra, cải thiện cách đặt câu hỏi và cách phát biểu ý kiến
+
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+
+Có. Khi nghĩ về 1 vấn đề, nhiều lúc nhóm vẫn nghĩ rằng là "Liệu vấn đề này có thể xử lý được không và xử lý thì xử lý bằng cách nào". Nhóm nhận ra mình cần khai thác vấn đề trước và tìm hiểu về những người đang gặp vấn đề tương tự để thật sự chắc rằng vấn đề đó tiềm năng
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
 
+Không, tôi chỉ cải thiện lại cách mình đặt vấn đề và tìm cách phản biện lại các critique question
+
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
 
+không, có vẻ như mọi người có gặp vấn đề này. Và các trường hợp gặp pain point này cũng tương tự như việc mà nhóm bản thân tôi đang gặp phải
+
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
+
+Thống nhất ý kiến của mọi người trong nhóm. Ngoài ra, tìm ra chính xác boundary dựa trên gợi ý từ AI cũng như từ ý kiến mọi người cũng là 1 điều khó, khi mà nhiều vấn đề boundary không được rõ ràng
 
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
+
+Bài nhóm em giải quyết vấn đề các thành viên nhóm học tập (2–6 người) mất thời gian tìm lại quyết định, người phụ trách, deadline và link tài liệu trong Zalo/Discord. Quy trình hiện tại phải tìm kiếm, đọc lại tin nhắn, phân biệt ý kiến và quyết định cuối cùng rồi đối chiếu tài liệu. Nhóm đặt mục tiêu tra cứu dưới 2 phút, tạo bản tổng hợp trong 4–5 phút và kiểm tra trong 2 tuần. AI chỉ hỗ trợ trích xuất thông tin từ chat, dẫn nguồn, không tự đưa ra quyết định hay phân công công việc. Nhóm chọn Workflow vì AI đảm nhận một bước trong quy trình cố định, giúp hạn chế việc con người quên cập nhật. Cuối cùng, nhóm sẽ quyết định Go, Not Yet hoặc No-Go dựa trên kết quả thử nghiệm và ngưỡng dừng đã thống nhất.
 
 ---
 
