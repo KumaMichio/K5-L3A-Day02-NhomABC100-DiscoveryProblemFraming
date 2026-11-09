@@ -80,8 +80,9 @@ Mỗi thành viên thêm một mục theo mẫu dưới đây, tiêu đề là `
 **Bằng chứng** (phần nào trong `group_report.md`, file nào trong `report/assets/`, commit nào):
 
 - `report/team/group_report.md` mục 3.1, 3.2, 3.3 (`## 3. Kiểm chứng + research giải pháp đã có (CP4)`) và dữ liệu candidate #7, #8, #9 ở mục 2.1.
-- Dữ liệu khảo sát thực tế: [Google Sheets (`N = 9`)](https://docs.google.com/spreadsheets/d/1UA0i4ZOfev5-8-MbpuRXZajs50KR8kp0O6rZIpSSzCY/edit?resourcekey=&gid=1731896032#gid=1731896032), `report/assets/cp4-survey-and-interviews.md`, `report/assets/cp4-survey-and-interviews.xlsx`.
+- Dữ liệu khảo sát thực tế: [Google Sheets (`N = 9`)](https://docs.google.com/spreadsheets/d/1UA0i4ZOfev5-8-MbpuRXZajs50KR8kp0O6rZIpSSzCY/edit?resourcekey=&gid=1731896032#gid=1731896032), `report/assets/cp4-survey-and-interviews.md`, `report/assets/cp4-survey-and-interviews.xlsx`, `report/assets/cp4-survey-raw.csv`.
 - Báo cáo cá nhân: `report/individual/2A202603357_LeVanHoang.md`.
+- Commits: `1e9282e` (báo cáo cá nhân), `d472732`, `6ccb408`, `8924221` (kiểm chứng CP4 & dữ liệu khảo sát thực tế).
 
 **Điều mình học được từ phần nhóm:**
 
