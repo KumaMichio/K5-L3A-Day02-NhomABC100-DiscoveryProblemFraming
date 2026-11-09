@@ -22,14 +22,11 @@ Bối cảnh: tôi là học viên chương trình AI20k (K5 · Level 3), mỗi 
 
 | # | Lăng kính | Job Story: Khi… tôi muốn… để… | Ai chịu ảnh hưởng? | Dấu hiệu thật (thời gian, tần suất, số người, bằng chứng) |
 |---:|---|---|---|---|
-| 1 | Lặp lại | Khi bắt đầu một ngày lab mới, tôi muốn cả nhóm có repo chung với đúng tên, đủ quyền commit và mỗi người có file cá nhân, để bắt đầu CP0 đúng giờ | Nhóm trưởng, cả nhóm (3–4 người) | Mỗi ngày lab 1 lần; README có 5 lưu ý riêng chỉ cho bước fork/đặt tên/mời collaborator. [cần điền: số phút setup hôm nay, số tin nhắn hỏi qua lại trong nhóm] |
-| 2 | Lặp lại | Khi đề bài hoặc hướng dẫn được sửa sau khi đã phát, tôi muốn biết chính xác chỗ nào đổi, để không làm theo bản cũ | Học viên cả lớp L3A/L3B | Repo đề Day 02 có 12 commit sửa đề từ 07/11 21:05 đến 09/11 00:30; 9 commit trong số đó sau 22:00 đêm trước lab (xem `git log`). [cần điền: số kênh tôi phải theo dõi (LMS, Discord, Zalo…), số lần đã làm theo bản cũ] |
-| 3 | Tốn thời gian | Khi ôn lại một khái niệm từ buổi học 4 tiếng, tôi muốn tìm đúng đoạn giảng về khái niệm đó, để không phải tua lại cả recording | Học viên | [cần điền: số phút tua tìm lần gần nhất, số lần/tuần] |
-| 4 | Cần đọc, tổng hợp nhiều thông tin | Khi điền một mục trong báo cáo lab, tôi muốn biết mọi yêu cầu cho mục đó (nội dung, định dạng, điểm), để không mất điểm vì thiếu | Học viên, coach chấm bài | Yêu cầu của Day 02 nằm rải rác trong 8 file, tổng ~15.900 từ (README, RULES, CHECKPOINTS, RUBRIC, SUBMISSION, 3 file docs; đếm bằng `wc -w`). [cần điền: số phút đối chiếu mỗi lab, số điểm từng mất vì thiếu mục] |
-| 5 | Cần đọc, tổng hợp nhiều thông tin | Khi lab dùng một framework tôi chưa biết (Mom Test, OST, Google PAIR…), tôi muốn nắm được ý chính đủ để áp dụng trong 15–30 phút, để không chậm tiến độ nhóm | Học viên | Day 02 dẫn ~10 framework (docs/03). [cần điền: số phút đọc, số nguồn mở cho 1 framework] |
-| 6 | Pain từ người khác | Khi làm chung một repo, bạn cùng nhóm muốn biết file nào của mình và commit thế nào cho đúng, để không ghi đè hoặc conflict với người khác | Thành viên nhóm | Hôm nay template `MSSV_HoTen.md` đã bị xóa trên máy tôi trong khi README yêu cầu giữ lại đến khi mọi người có file. [cần điền: số câu hỏi kiểu này trong chat nhóm, số lần conflict] |
-| 7 | Pain từ người khác | Khi nhóm chia việc qua chat, mỗi thành viên muốn biết ai làm phần nào và đến đâu, để không làm trùng hay bỏ sót | Cả nhóm | [cần điền: số lần làm trùng/bỏ sót ở các lab trước, dẫn chứng tin nhắn] |
-| 8 | Tốn thời gian | Khi cuối buổi lab phải điền bảng "Dùng AI", tôi muốn nhớ chính xác mình đã dùng AI ở checkpoint nào, AI sai ở đâu và tôi sửa gì, để ghi đúng sự thật mà không mất điểm | Học viên cả lớp | Mỗi lab 1 lần; RULES §2 yêu cầu ghi lại *mỗi lần* dùng AI; bảng "Dùng AI" có 6 dòng checkpoint × 4 cột, trải trên buổi 240 phút. [cần điền: số phút điền bảng ở lab trước, số lần dùng AI mà tôi quên ghi] |
+| 1 | Lặp lại | Khi bắt đầu một ngày lab mới, tôi muốn cả nhóm có repo chung với đúng tên, đủ quyền commit và mỗi người có file cá nhân, để bắt đầu CP0 đúng giờ | Nhóm trưởng, cả nhóm (3–4 người) | Mỗi ngày lab 1 lần; README có 5 lưu ý riêng chỉ cho bước fork/đặt tên/mời collaborator. Tôi cần 15-20 phút để setup và thêm 15-20 phút để giải thích vấn đề cần làm cho nhóm |
+| 2 | Tốn thời gian | Khi ôn lại một khái niệm từ buổi học 4 tiếng, tôi muốn tìm đúng đoạn giảng về khái niệm đó, để không phải tua lại cả recording | Học viên | 20-30 phút, gần như vid nào cũng phải tua |
+| 3 | Cần đọc, tổng hợp nhiều thông tin | Khi điền một mục trong báo cáo lab, tôi muốn biết mọi yêu cầu cho mục đó (nội dung, định dạng, điểm), để không mất điểm vì thiếu | Học viên, coach chấm bài | Yêu cầu của Day 02 nằm rải rác trong 8 file, tổng ~15.900 từ (README, RULES, CHECKPOINTS, RUBRIC, SUBMISSION, 3 file docs; đếm bằng `wc -w`). ~15-20 phút cho việc scan nội dung các file yêu cầu |
+| 4 | Cần đọc, tổng hợp nhiều thông tin | Khi lab dùng một framework tôi chưa biết (Mom Test, OST, Google PAIR…), tôi muốn nắm được ý chính đủ để áp dụng trong 15–30 phút, để không chậm tiến độ nhóm | Học viên | Day 02 dẫn ~10 framework (docs/03). ~15-20 phút |
+| 5 | Tốn thời gian | Khi cuối buổi lab phải điền bảng "Dùng AI", tôi muốn nhớ chính xác mình đã dùng AI ở checkpoint nào, AI sai ở đâu và tôi sửa gì, để ghi đúng sự thật mà không mất điểm | Học viên cả lớp | Mỗi lab 1 lần; RULES §2 yêu cầu ghi lại *mỗi lần* dùng AI; bảng "Dùng AI" có 6 dòng checkpoint × 4 cột, trải trên buổi 240 phút. ~60 phút, không rõ bao nhiêu AI log bị quên |
 
 **Nếu có dùng AI để gợi ý thêm:** ý nào AI gợi ý mà bạn giữ lại, ý nào bỏ và vì sao.
 
@@ -57,9 +54,9 @@ Bối cảnh: tôi là học viên chương trình AI20k (K5 · Level 3), mỗi 
 | Actor | Học viên AI20k K5 · L3, dùng 1–2 trợ lý AI (ChatGPT, Gemini, Claude…) rải rác qua 6 checkpoint của một buổi lab 240 phút |
 | Thời điểm / bối cảnh | 15 phút cuối buổi (CP7), lúc đã mệt và cùng lúc phải viết reflection ≥ 200 từ; các cuộc hội thoại AI nằm ở nhiều tab/app khác nhau |
 | Quy trình hiện tại (3–7 bước) | 1. Mở bảng "Dùng AI" trong báo cáo → 2. Cố nhớ lại đã dùng AI ở checkpoint nào → 3. Mở lại lịch sử chat của từng app để tìm đúng đoạn hội thoại → 4. Đọc lại để xác định AI giúp gì, sai gì → 5. Nhớ lại mình đã sửa gì và sửa ở đâu trong báo cáo → 6. Viết vào 4 cột của bảng |
-| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 3–5: tìm lại hội thoại cũ và nhớ "AI sai ở đâu / tôi sửa gì" — chi tiết này không lưu ở đâu cả, chỉ nằm trong trí nhớ — [cần điền] phút |
+| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 3–5: tìm lại hội thoại cũ và nhớ "AI sai ở đâu / tôi sửa gì" — chi tiết này không lưu ở đâu cả, chỉ nằm trong trí nhớ — ~20-30 phút |
 | Impact (nếu không giải thì sao) | Bảng ghi chung chung ("AI giúp gợi ý ý tưởng") hoặc thiếu dòng → mất điểm phần dùng AI và tiêu chí "có ít nhất 1 chỗ AI sai và bạn đã sửa thế nào" (CP7); lấn thời gian viết reflection |
-| Success metric (baseline → target) | Thời gian điền bảng "Dùng AI": [cần điền baseline] phút → ≤ 5 phút. Số lần dùng AI bị quên ghi/buổi: [cần điền] → 0. Số ô trong bảng có ví dụ cụ thể (không chung chung): [cần điền] → 100% dòng đã dùng AI |
+| Success metric (baseline → target) | Thời gian điền bảng "Dùng AI": 60 phút → ≤ 5 phút. Số lần dùng AI bị quên ghi/buổi: 6-7 → 0. Số ô trong bảng có ví dụ cụ thể (không chung chung): 60-70% → 100% dòng đã dùng AI |
 | Phương án không dùng AI | Ghi log ngay sau mỗi lần dùng AI (1 dòng: checkpoint, dùng để làm gì, AI sai gì, tôi sửa gì) vào một file nháp hoặc thẳng vào bảng; đặt nhắc "ghi log" ở cuối mỗi checkpoint |
 | Giả thuyết về AI (nếu có) | Tóm tắt lịch sử hội thoại thành nháp 4 cột — nhưng AI không biết tôi đã sửa gì trong báo cáo, nên vẫn phải tự ghi phần đó |
 | Cảm nhận nhanh | **No AI / Rule** (thói quen ghi ngay + nhắc cuối mỗi checkpoint) |
@@ -86,7 +83,7 @@ HIỆN TẠI — ~60 phút, 1 lần/lab, trong 15' cuối buổi
 | Quy trình hiện tại (3–7 bước) | 1. Mở template báo cáo → 2. Đọc CHECKPOINTS cho mục đó → 3. Mở worksheet xem hướng dẫn chi tiết → 4. Mở RUBRIC xem tiêu chí chấm → 5. Mở bài mẫu xem cách viết → 6. Viết → 7. Tự kiểm checklist |
 | Bottleneck (bước nào, mất bao nhiêu phút) | Bước 2–4: nhảy giữa 3–4 file để gom yêu cầu của **một** mục — [cần điền] phút/mục |
 | Impact (nếu không giải thì sao) | Thiếu trường bắt buộc (ví dụ quên "phương án không dùng AI" trong card) → mất điểm; tốn thời gian buổi lab vốn chỉ 35' cho CP2 |
-| Success metric (baseline → target) | Số mục bị chấm thiếu yêu cầu/lab: [cần điền] → 0. Thời gian gom yêu cầu/mục: [cần điền] → ≤ 2 phút |
+| Success metric (baseline → target) | Số mục bị chấm thiếu yêu cầu/lab: 1-2 → 0. Thời gian gom yêu cầu/mục: 10 phút → ≤ 2 phút |
 | Phương án không dùng AI | Một checklist gộp mỗi checkpoint (đã có một phần ở "Tự kiểm tra"); tự làm bảng tra mục → file → dòng |
 | Giả thuyết về AI (nếu có) | Tra cứu tài liệu lab theo câu hỏi, có dẫn nguồn file/dòng — chỉ đáng nếu checklist gộp vẫn thiếu |
 | Cảm nhận nhanh | **No AI / Rule** (checklist) — Workflow nếu tài liệu đổi liên tục |
@@ -109,9 +106,9 @@ HIỆN TẠI — 2-10 phút cho mỗi mục báo cáo
 | Actor | Thành viên nhóm 3–4 người, khác nhau về mức quen Git |
 | Thời điểm / bối cảnh | Đầu buổi (tạo file cá nhân) và lúc nhiều người cùng sửa `group_report.md`, `TEAM.md` (CP3–CP7) |
 | Quy trình hiện tại (3–7 bước) | 1. Nhóm trưởng fork + mời collaborator → 2. Thành viên chấp nhận lời mời, clone → 3. Tạo file cá nhân từ template → 4. Cùng sửa file nhóm → 5. Pull/push, gặp conflict → 6. Hỏi trên chat, sửa conflict |
-| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 5–6: xử lý conflict khi nhiều người sửa cùng `group_report.md` — [cần điền] phút/lần |
+| Bottleneck (bước nào, mất bao nhiêu phút) | Bước 5–6: xử lý conflict khi nhiều người sửa cùng `group_report.md` — 15-20 phút/lần |
 | Impact (nếu không giải thì sao) | Mất nội dung của người khác; commit sai tài khoản → không được tính đóng góp (RULES §3) |
-| Success metric (baseline → target) | Số conflict/buổi: [cần điền] → ≤ 1. Số phút xử lý: [cần điền] → ≤ 5 |
+| Success metric (baseline → target) | Số conflict/buổi: ~10-11 → ≤ 1. Số phút xử lý: 30-40 → ≤ 5 |
 | Phương án không dùng AI | Chia section `group_report.md` theo người phụ trách trong `TEAM.md`; quy ước "pull trước khi sửa"; 1 người merge file nhóm |
 | Giả thuyết về AI (nếu có) | Không thấy cần — bài toán là phối hợp, không phải đọc/tổng hợp |
 | Cảm nhận nhanh | **No AI** |
@@ -119,11 +116,11 @@ HIỆN TẠI — 2-10 phút cho mỗi mục báo cáo
 Quy trình nháp hiện tại:
 
 ```text
-HIỆN TẠI — [cần điền] phút/buổi
+HIỆN TẠI — 50-60 phút/buổi
 
-[1. Fork + mời: __'] → [2. Accept + clone: __'] → [3. Tạo file cá nhân: __']
-→ [4. Cùng sửa file nhóm: __'] → [5. Pull/push gặp conflict: __'] ← BOTTLENECK
-→ [6. Hỏi chat + sửa: __']
+[1. Fork + mời: 10'] → [2. Accept + clone: 5'] → [3. Tạo file cá nhân: 5']
+→ [4. Cùng sửa file nhóm: 15'] → [5. Pull/push gặp conflict: 10'] ← BOTTLENECK
+→ [6. Hỏi chat + sửa: 10']
 ```
 
 ### Card muốn pitch nhất
@@ -139,7 +136,7 @@ Card #1 ban đầu là problem #2 (đề bài/hướng dẫn thay đổi sau khi
 | Điểm yếu (ai chỉ ra) | Đồng ý? | Đã sửa gì |
 |---|---|---|
 | (Tôi tự phản biện) Đề không thay đổi nhiều *trong* buổi lab — phần lớn 12 commit sửa đề nằm trước buổi học, nên pain khi đang làm lab là nhỏ | Đồng ý | Bỏ card "đề thay đổi" khỏi top 3 (vẫn giữ ở bảng scan CP1, dòng 2); thay bằng problem #8 "điền bảng Dùng AI cuối buổi" |
-| [cần điền: chạy prompt "PM hoài nghi" (docs/01-worksheet.md) cho Card #1 mới và ghi điểm yếu AI chỉ ra] | | |
+| 
 
 ---
 
