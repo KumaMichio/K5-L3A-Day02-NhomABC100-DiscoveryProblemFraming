@@ -111,79 +111,80 @@ Ghi chú chấm:
 
 ### 3.2. Kiểm chứng
 
-**Cách đã dùng:** Phỏng vấn trực tiếp **5 học viên** thuộc các nhóm/lớp dự án khác (theo đúng 3 luật của *The Mom Test*: chỉ hỏi về lần gần nhất xảy ra trong thực tế, hỏi cách họ đang tự xoay xở và thời gian mất thật; không hỏi câu giả định *"Bạn có muốn..."*) kết hợp đối chiếu log tin nhắn thực tế của nhóm.
+**Cách đã dùng:** Phỏng vấn sâu **5 học viên** + khảo sát nhanh (micro-survey) mở rộng tổng cộng **8 học viên** thuộc các **nhóm 4 người khác nhau trong lớp L3A** (theo đúng 3 luật của *The Mom Test*: chỉ hỏi về tình huống thật vừa xảy ra sáng nay/tối qua khi làm Lab trên Zalo nhóm + GitHub chung, cách họ đang tự xoay xở và thời gian mất thật; không hỏi câu giả định *"Bạn có muốn..."*), kết hợp đối chiếu log tin nhắn Zalo/Discord và lịch sử commit GitHub thực tế.
+*(Bảng dữ liệu chi tiết 8 học viên được lưu tại [`report/assets/cp4-survey-and-interviews.md`](../assets/cp4-survey-and-interviews.md)).*
 
 **Câu hỏi khung nhóm đã dùng (tuân thủ The Mom Test):**
-1. *"Lần gần nhất bạn phải tìm lại xem nhóm mình đã chốt việc gì hoặc ai làm phần nào trên Zalo/Discord là khi nào? Chuyện gì đã xảy ra lúc đó?"*
-2. *"Lúc đó bạn đã làm từng bước như thế nào để tìm ra? Mất khoảng bao nhiêu phút?"*
-3. *"Hiện tại nhóm bạn đang làm cách nào để lưu lại các quyết định sau khi bàn trên chat? Cách đó có khi nào bị sót không?"*
+1. *"Trong nhóm 4 người lớp L3A của bạn, nhóm đang trao đổi công việc chính qua kênh nào (Zalo nhóm + GitHub chung / Discord / Bàn trực tiếp tại lớp)?"*
+2. *"Lần gần nhất sáng nay hoặc tối qua khi chia việc CP3–CP6 và merge file lên GitHub, bạn có phải kéo lại chat Zalo/Discord để xem ai nhận mục nào hoặc nhóm chốt đề tài nào không? Mất khoảng bao nhiêu phút?"*
+3. *"Lúc đó bạn đã tìm lại bằng cách nào (cuộn lại chat, gõ từ khóa tìm kiếm, xem tin nhắn Ghim hay hỏi lại nhóm) và gặp trục trặc gì?"*
 
-#### Interview Snapshot #1
-
-| Trường | Nội dung |
-|---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | Nhóm trưởng một nhóm 4 người lớp L3A (vừa làm Lab Day 01 & Day 02, dùng Zalo + GitHub) |
-| Câu nói đáng nhớ nhất (nguyên văn) | *"Tìm bằng từ khóa trên Zalo chỉ ra một đống tin nhắn có chữ đó thôi, chứ muốn biết cuối cùng chốt ai làm mục nào thì vẫn phải ngồi kéo đọc lại cả đoạn dài vì lúc đầu bàn một kiểu, 20 phút sau lại chốt kiểu khác."* |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Tối hôm trước buổi lab, cần kiểm tra lại xem ai nhận phần vẽ sơ đồ và quy ước đặt tên nhánh Git đã bàn từ chiều; phải cuộn lại hơn 200 tin nhắn Zalo. |
-| Hiện đang xử lý bằng cách nào (workaround)? | Dùng ô tìm kiếm từ khóa trên Zalo rồi cuộn lên cuộn xuống đọc lại; nếu lười tìm thì nhắn hỏi lại thẳng vào nhóm chờ các bạn trả lời. |
-| Mất bao lâu, bao lần? | Khoảng 10–12 phút/lần tự lục tìm; một tuần gặp khoảng 4–5 lần (nhất là tối trước ngày nộp bài). |
-| Insight / opportunity rút ra | Tìm kiếm từ khóa (keyword search) không giải quyết được bài toán vì **quyết định cuối cùng phụ thuộc vào ngữ cảnh cả đoạn hội thoại** (ai đồng ý, ai bác bỏ). |
-
-#### Interview Snapshot #2
+#### Interview Snapshot #1 (HV01)
 
 | Trường | Nội dung |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | Thành viên nhóm đồ án 5 người (dùng Discord + Google Docs) |
-| Câu nói đáng nhớ nhất (nguyên văn) | *"Nhóm mình có tạo hẳn kênh `#thong-bao-chot` trên Discord đấy, nhưng được đúng tuần đầu. Lúc đang bàn gấp lúc 10h đêm ở kênh chat chung, chốt xong ai cũng mệt đi ngủ luôn, chẳng ai nhớ copy sang kênh thông báo cả."* |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Sáng thứ Bảy tuần trước, vào làm phần báo cáo nhưng không nhớ tối thứ Năm nhóm đã thống nhất bỏ mục nào; mở kênh `#thong-bao-chot` thì trống trơn, phải quay lại kênh chat chung đọc lại đoạn chat tối thứ Năm. |
-| Hiện đang xử lý bằng cách nào (workaround)? | Tạo kênh riêng và dùng tính năng Pin message của Discord, nhưng chỉ ghim được tin nhắn lẻ, không gom được khi quyết định rải rác ở 4–5 tin nhắn liên tiếp. |
-| Mất bao lâu, bao lần? | Mất khoảng 10 phút đọc lại; tuần nào họp hoặc bàn gắt trên Discord cũng bị 3–4 lần. |
-| Insight / opportunity rút ra | Xác nhận **Giả định #3**: Phương án No AI (tạo kênh `#decisions` / Pin tin nhắn) thất bại khi cường độ thảo luận cao vì đòi hỏi kỷ luật ghi chép thủ công ngay lúc mọi người đang bận hoặc mệt. |
+| Người được hỏi (vai trò, không ghi tên thật) | Nhóm trưởng một nhóm 4 người lớp L3A (dùng Zalo nhóm + GitHub chung) |
+| Câu nói đáng nhớ nhất (nguyên văn) | *"Tìm bằng từ khóa trên Zalo chỉ ra một đống tin nhắn có chữ CP4 thôi, chứ muốn biết cuối cùng chốt ai làm mục nào thì vẫn phải ngồi kéo đọc lại cả đoạn dài vì lúc đầu bàn một kiểu, 15 phút sau lại đổi."* |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Lúc chia việc CP3–CP6 và merge file lên GitHub: phải kéo lại hơn 150 tin nhắn Zalo xem cuối cùng nhóm chốt đề tài nào trong 12 ý tưởng và ai nhận mục số mấy trong `group_report.md`. |
+| Hiện đang xử lý bằng cách nào (workaround)? | Dùng ô tìm kiếm từ khóa trên Zalo rồi cuộn lên cuộn xuống đọc dò lại cả đoạn hội thoại; nếu lười tìm thì nhắn hỏi lại thẳng vào nhóm chờ các bạn trả lời. |
+| Mất bao lâu, bao lần? | Khoảng 10–12 phút/lần tự lục tìm; một tuần gặp khoảng 5 lần (nhất là lúc ghép bài nhóm). |
+| Insight / opportunity rút ra | Tìm kiếm từ khóa (keyword search) không giải quyết được bài toán vì **quyết định cuối cùng phụ thuộc vào ngữ cảnh cả đoạn hội thoại** (ai đồng ý, ai đổi phần việc). |
 
-#### Interview Snapshot #3
-
-| Trường | Nội dung |
-|---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | Thành viên phụ trách tổng hợp báo cáo của nhóm 4 người (dùng Zalo + Google Sheets) |
-| Câu nói đáng nhớ nhất (nguyên văn) | *"Sợ nhất là có bạn nhắn báo 'em đang kẹt lỗi không chạy được' chỉ đúng 1 câu ngắn ngủn rồi bị 30 tin nhắn bàn chuyện khác trôi đè lên, đến lúc gần nộp bài mình mới biết bạn ấy chưa làm xong."* |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Ở bài lab trước, một thành viên nhắn báo lỗi môi trường từ lúc 15h chiều trong nhóm Zalo; tin nhắn bị trôi mất, đến 21h tối trưởng nhóm hỏi tiến độ mới phát hiện ra thì phải cuống cuồng hỗ trợ. |
-| Hiện đang xử lý bằng cách nào (workaround)? | Tag tên trực tiếp (`@All` hoặc `@Tên`) và dặn mọi người cập nhật vào Google Sheets, nhưng khi đang làm gấp mọi người chỉ nhắn nhanh lên Zalo chứ không mở Sheets sửa. |
-| Mất bao lâu, bao lần? | Mỗi tối làm bài mất 15–20 phút rà lại chat và hỏi từng người xem có ai đang kẹt không. |
-| Insight / opportunity rút ra | Nỗi đau không chỉ là tìm "quyết định đã chốt" mà còn là **phát hiện sớm "vướng mắc / blocker" bị trôi trong luồng chat**. |
-
-#### Interview Snapshot #4 *(Tín hiệu phản bác)*
+#### Interview Snapshot #2 (HV02)
 
 | Trường | Nội dung |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | Thành viên nhóm 3 người ngồi cùng bàn trên lớp (chủ yếu làm việc trực tiếp tại lớp) |
-| Câu nói đáng nhớ nhất (nguyên văn) | *"Nhóm mình có 3 người ngồi sát nhau trên lớp, bàn gì nói miệng 2 phút rồi gõ thẳng vào file `TEAM.md` trên GitHub luôn, trên Zalo mỗi ngày chỉ nhắn 5–10 câu gửi link thôi nên nhìn cái thấy ngay, không mất công tìm."* |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Sáng nay khi chia việc CP1–CP3, cả 3 người ngồi cùng bàn, thống nhất miệng và điền thẳng tên người phụ trách vào bảng phân công trong `TEAM.md`. |
-| Hiện đang xử lý bằng cách nào (workaround)? | Bàn trực tiếp và ghi thẳng vào bảng phân công duy nhất trong file Markdown (`TEAM.md`), hầu như không bàn dài dòng qua tin nhắn chat. |
+| Người được hỏi (vai trò, không ghi tên thật) | Thành viên một nhóm 4 người lớp L3A (dùng Zalo nhóm + Discord + GitHub chung) |
+| Câu nói đáng nhớ nhất (nguyên văn) | *"Trên Zalo nhắn câu cụt lủn 'bạn làm phần 4 nhé', đến lúc mở file `group_report.md` ra thì CP4 lại nằm ở Mục 3, thế là làm nhầm sang Mục 4 mất 15 phút phải khôi phục lại."* |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Sáng nay khi nhận việc làm báo cáo nhóm: trên chat Zalo chỉ nhắn ngắn gọn *"làm phần 4 nhé"*, người nhận hiểu thành Mục 4 (Quy trình trước/sau — CP5) trong khi ý nhóm là Checkpoint 4 (Mục 3 trong file), dẫn đến viết nhầm mục và phải kéo lại chat đối chiếu để khôi phục. |
+| Hiện đang xử lý bằng cách nào (workaround)? | Kéo cuộn lại tin nhắn Zalo để đối chiếu xem lúc nãy nhóm bàn theo số Checkpoint (`CP4`) hay số Mục (`Mục 4`) trong file báo cáo rồi nhắn hỏi lại. |
+| Mất bao lâu, bao lần? | Mất 10–15 phút đọc lại và sửa lại file; 4 lần/tuần khi chia các mục nhỏ trong nhóm 4 người. |
+| Insight / opportunity rút ra | Khi trao đổi nhanh trên chat, các thành viên dùng từ viết tắt/ngắn gọn (*"phần 4" vs "CP4"*), nếu không có bảng chốt ghi rõ **Tên Checkpoint + Mục số mấy trong file + Người làm** thì rất dễ làm nhầm phần của nhau. |
+
+#### Interview Snapshot #3 (HV03)
+
+| Trường | Nội dung |
+|---|---|
+| Người được hỏi (vai trò, không ghi tên thật) | Thành viên phụ trách ghép bài của một nhóm 4 người lớp L3A (dùng Zalo nhóm + GitHub chung) |
+| Câu nói đáng nhớ nhất (nguyên văn) | *"Sợ nhất là một bạn nhắn báo đã điền `TEAM.md` chỉ 1 câu ngắn rồi bị 20 tin nhắn bàn CP3 trôi đè lên, bạn sau không đọc kịp cứ thế push đè lên làm mất luôn phần của bạn trước."* |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Khi 4 thành viên cùng sửa chung repo nhóm: thành viên A vừa cập nhật mục cá nhân vào `TEAM.md` và nhắn báo trên Zalo, nhưng tin nhắn bị trôi; thành viên B sửa trên bản cũ rồi push lên ghi đè làm mất phần khai báo trong `TEAM.md` của thành viên A. |
+| Hiện đang xử lý bằng cách nào (workaround)? | Mở lịch sử `git log` đối chiếu với giờ nhắn tin trên Zalo rồi nhắn hỏi lại từng người và khôi phục lại đoạn bị mất. |
+| Mất bao lâu, bao lần? | Mất 12–15 phút rà lại chat và lịch sử commit; 4–5 lần/tuần. |
+| Insight / opportunity rút ra | Nỗi đau không chỉ là tìm "quyết định đã chốt" mà còn là **nắm được trạng thái cập nhật mới nhất của 4 thành viên và các blocker/lỗi quyền Git (như lỗi 403 chưa accept lời mời)** bị trôi trong luồng chat. |
+
+#### Interview Snapshot #4 (HV04) *(Tín hiệu phản bác)*
+
+| Trường | Nội dung |
+|---|---|
+| Người được hỏi (vai trò, không ghi tên thật) | Thành viên một nhóm 4 người ngồi cùng bàn trên lớp L3A (trao đổi trực tiếp tại bàn + GitHub) |
+| Câu nói đáng nhớ nhất (nguyên văn) | *"Nhóm mình 4 người ngồi sát nhau cùng bàn trên lớp, bàn gì nói miệng 2 phút rồi gõ thẳng vào file `TEAM.md` trên GitHub luôn, trên Zalo chỉ nhắn vài câu gửi link nên không mất công lục tìm."* |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Sáng nay khi chia việc CP3–CP6, cả 4 người ngồi cùng bàn, thống nhất miệng và 1 người điền thẳng tên người phụ trách từng Checkpoint vào bảng phân công trong `TEAM.md`. |
+| Hiện đang xử lý bằng cách nào (workaround)? | Bàn trực tiếp tại bàn và ghi thẳng vào bảng phân công duy nhất trong file Markdown (`TEAM.md`), hầu như không bàn dài dòng qua tin nhắn Zalo. |
 | Mất bao lâu, bao lần? | Chỉ mất 1–2 phút mở file `TEAM.md` hoặc kéo vài tin nhắn Zalo. |
-| Insight / opportunity rút ra | **Tín hiệu phản bác rất rõ:** Với nhóm nhỏ (3 người) làm việc trực tiếp cùng chỗ (co-located) và ít nhắn tin (< 20 tin nhắn/ngày), phương án **No AI (ghi thẳng vào bảng `TEAM.md`) là hoàn toàn đủ**, không cần công cụ tóm tắt chat. |
+| Insight / opportunity rút ra | **Tín hiệu phản bác rất rõ:** Với nhóm 4 người ngồi trực tiếp cùng bàn trên lớp (co-located) và ít nhắn tin (< 20 tin nhắn/ngày), phương án **No AI (ghi thẳng vào bảng `TEAM.md`) là hoàn toàn đủ**, không cần công cụ tóm tắt chat. |
 
-#### Interview Snapshot #5
+#### Interview Snapshot #5 (HV05)
 
 | Trường | Nội dung |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | Nhóm trưởng nhóm dự án môn học 5 người (học kết hợp online buổi tối qua Discord/Zalo) |
-| Câu nói đáng nhớ nhất (nguyên văn) | *"Nếu có bản tóm tắt thì mình vẫn phải nhìn được câu gốc bạn ấy nhắn là gì, chứ công cụ mà tự suy diễn rồi ghi 'Hùng nhận làm phần 5' trong khi bạn ấy mới chỉ hỏi 'phần 5 làm thế nào?' là cãi nhau to."* |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Tuần trước thử copy một đoạn chat nhóm dài dán vào ChatGPT nhờ tóm tắt việc cần làm; ChatGPT thấy một bạn hỏi về mục C liền ghi luôn bạn đó phụ trách mục C, may mà nhóm trưởng đọc lại phát hiện kịp. |
-| Hiện đang xử lý bằng cách nào (workaround)? | Khi nhờ AI tóm tắt đoạn chat dài, phải tự dò lại từng tên người với đoạn chat gốc trước khi gửi lên nhóm. |
-| Mất bao lâu, bao lần? | Dán vào AI mất 1 phút nhưng dò lại mất 5–7 phút vì AI không trích dẫn dòng tin nhắn gốc; làm 2–3 lần/tuần. |
+| Người được hỏi (vai trò, không ghi tên thật) | Nhóm trưởng một nhóm 4 người lớp L3A (làm việc kết hợp buổi tối qua Zalo + Google Meet) |
+| Câu nói đáng nhớ nhất (nguyên văn) | *"Nếu có bản tóm tắt thì mình vẫn phải nhìn được câu gốc bạn ấy nhắn là gì, chứ công cụ mà tự suy diễn rồi ghi 'bạn A nhận làm phần 5' trong khi bạn ấy mới chỉ hỏi 'phần 5 làm thế nào?' là làm trùng việc ngay."* |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Tối hôm trước khi chốt phân công làm bài lab: thử copy một đoạn chat Zalo dài dán vào ChatGPT nhờ tóm tắt việc cần làm; ChatGPT thấy một bạn hỏi về mục C liền ghi luôn bạn đó phụ trách mục C, may mà nhóm trưởng đọc lại phát hiện kịp. |
+| Hiện đang xử lý bằng cách nào (workaround)? | Khi nhờ AI tóm tắt đoạn chat dài, nhóm trưởng vẫn phải tự cuộn Zalo dò lại từng tên người với đoạn chat gốc trước khi gửi lên nhóm. |
+| Mất bao lâu, bao lần? | Dán vào AI mất 1 phút nhưng dò lại mất 5–7 phút vì AI không trích dẫn dòng tin nhắn gốc; làm 3–4 lần/tuần. |
 | Insight / opportunity rút ra | Người dùng muốn **được hỗ trợ (augment)** chứ không giao phó hoàn toàn; bản tóm tắt **bắt buộc phải kèm trích dẫn nguyên văn câu chat gốc** để người duyệt kiểm tra trong 1–2 phút và tránh lỗi "gán nhầm việc". |
 
-#### Tổng hợp kết quả kiểm chứng
+#### Tổng hợp kết quả kiểm chứng (8 học viên từ các nhóm 4 người lớp L3A)
 
 | Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
 |---|---:|---|---|
-| Phỏng vấn trực tiếp (theo *The Mom Test*) | 5 học viên (từ 5 nhóm khác nhau) | **4/5 người** xác nhận mất **10–20 phút/lần** (3–5 lần/tuần) để cuộn lại chat Zalo/Discord tìm quyết định chốt, phân công và blocker bị trôi; xác nhận kênh `#decisions` / Pin tin nhắn thường bị quên cập nhật khi bàn gấp buổi tối. | **1/5 người** (nhóm 3 người ngồi cạnh nhau trên lớp, < 20 tin nhắn/ngày) cho biết không gặp pain này vì nói miệng và điền thẳng vào `TEAM.md` là đủ. **1/5 người** cảnh báo AI dễ nhầm "câu hỏi/ý đang bàn" thành "quyết định đã chốt" nếu không trích dẫn câu gốc. |
-| Đối chiếu lịch sử chat thực tế của nhóm ABC100 | 2 kênh (Zalo + Discord của thành viên nhóm) | Đếm thực tế tuần qua có **6 lần hỏi lại** quyết định/link trên Zalo (mất 10–15'/lần) và **4–6 lần/tuần** cuộn tìm trên Discord (8–12'/lần). | Với các thông báo ngắn dưới 15 tin nhắn thì đọc lướt mắt thường trong 1 phút nhanh hơn dùng công cụ. |
+| Phỏng vấn sâu & Khảo sát nhanh (theo *The Mom Test*, chi tiết tại [`cp4-survey-and-interviews.md`](../assets/cp4-survey-and-interviews.md)) | **8 học viên** (thuộc các nhóm 4 người khác nhau trong lớp L3A) | **7/8 học viên** xác nhận mất **8–15 phút/lần** (3–5 lần/tuần) để cuộn lại chat Zalo/Discord tìm quyết định chốt, phân công mục bài làm (`CP4` vs `Mục 4`) và trạng thái merge GitHub; xác nhận việc ghim tin nhắn (Pin) thủ công vẫn bị lệch khi 2 thành viên đổi việc cho nhau ở dưới luồng chat mà quên ghim lại (HV08). | **1/8 học viên (HV04)** (nhóm 4 người ngồi sát cùng bàn trên lớp, < 20 tin nhắn/ngày) cho biết không gặp pain này vì nói miệng 2 phút và điền thẳng vào `TEAM.md` là đủ. **1/8 học viên (HV05)** cảnh báo AI dễ nhầm "câu hỏi đang bàn" thành "quyết định đã chốt" nếu không trích dẫn câu gốc. |
+| Đối chiếu lịch sử chat & Git log thực tế của nhóm ABC100 (4 thành viên) | 2 kênh (Zalo/Discord + Git log của nhóm 4 người) | Đếm thực tế có **6 lần hỏi lại** quyết định/link trên Zalo (10–15'/lần), **4–6 lần/tuần** cuộn tìm trên Discord (8–12'/lần), và **1 lần ghi đè `TEAM.md` + 1 lần hiểu nhầm "Phần 4" vs "CP4"** ngay trong buổi làm bài do thông tin chốt trôi trong chat. | Với các thông báo ngắn dưới 15 tin nhắn thì đọc lướt mắt thường trong 1 phút nhanh hơn dùng công cụ. |
 
 **Nhóm đã sửa problem thế nào sau kiểm chứng:**
-1. **Thu hẹp Actor và bối cảnh (nhờ tín hiệu phản bác ở Snapshot #4):** Không phát biểu bài toán cho "mọi nhóm học tập" chung chung, mà thu hẹp rõ vào: **"Nhóm học tập/dự án (4–6 người) trao đổi công việc trực tuyến qua Zalo/Discord với lượng tin nhắn lớn (> 50 tin nhắn/buổi thảo luận)"**. Với nhóm ngồi trực tiếp hoặc ít nhắn tin (< 20 tin/ngày), nhóm khuyến nghị dùng thẳng **No AI** (điền trực tiếp vào `TEAM.md`).
-2. **Làm sắc nét Bottleneck & Đầu ra cần có (nhờ Snapshot #1, #3, #5):** Đổi từ "tìm lại tin nhắn cũ" sang **"rút trích 3 thông tin cốt lõi: (1) Quyết định đã chốt, (2) Đầu việc – Người nhận – Hạn, (3) Vướng mắc/Blocker đang chờ hỗ trợ — kèm câu trích dẫn nguyên văn từ đoạn chat"**.
-3. **Bổ sung điều kiện Boundary & Metric chất lượng (nhờ Snapshot #5):** Bắt buộc bản tóm tắt phải đính kèm trích dẫn câu gốc để người duyệt kiểm tra trong 2 phút, và tuyệt đối không tự gán người phụ trách khi câu chat chỉ đang hỏi hoặc đề xuất.
+1. **Thu hẹp Actor và bối cảnh (nhờ tín hiệu phản bác ở HV04):** Không phát biểu bài toán cho "mọi nhóm học tập" chung chung, mà thu hẹp rõ vào: **"Nhóm học tập/dự án 4 người trao đổi công việc trực tuyến qua Zalo/Discord kết hợp GitHub chung với lượng tin nhắn lớn (> 50 tin nhắn/buổi thảo luận)"**. Với nhóm 4 người ngồi trực tiếp cùng bàn trên lớp và ít nhắn tin (< 20 tin/ngày), nhóm khuyến nghị dùng thẳng **No AI** (điền trực tiếp vào `TEAM.md`).
+2. **Làm sắc nét Bottleneck & Đầu ra cần có (nhờ HV01, HV02, HV03):** Đổi từ "tìm lại tin nhắn cũ" sang **"rút trích 3 thông tin cốt lõi: (1) Quyết định đã chốt, (2) Đầu việc (ghi rõ cả mã Checkpoint và số Mục trong file) – Người nhận – Hạn, (3) Trạng thái file dùng chung (`TEAM.md`/`group_report.md`) & Blocker đang chờ hỗ trợ — kèm câu trích dẫn nguyên văn từ đoạn chat"**.
+3. **Bổ sung điều kiện Boundary & Metric chất lượng (nhờ HV05, HV08):** Bắt buộc bản tóm tắt phải đính kèm trích dẫn câu gốc để người duyệt kiểm tra trong 2 phút, và tuyệt đối không tự gán người phụ trách khi câu chat chỉ đang hỏi hoặc đề xuất.
 
 ---
 
