@@ -189,16 +189,16 @@ Tôi cho rằng những kiến thức này không chỉ hữu ích đối với 
 
 ## 5. Dùng AI
 
+## 5. Dùng AI
+
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | | | | |
-| CP2 Problem Card | | | | |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
-
----
+| **CP1 Scan** | Không phụ trách phần này trong bài nhóm. | — | — | — |
+| **CP2 Problem Card** | Không phụ trách phần này trong bài nhóm. | — | — | — |
+| **CP4 Research** | Tôi dùng ChatGPT hỗ trợ hệ thống hóa danh sách tài liệu tham khảo ở cuối báo cáo từ những nguồn nhóm đã nghiên cứu. | Giúp sắp xếp các tài liệu liên quan đến Discord, Slack AI, n8n và NotebookLM theo nội dung sử dụng. | AI chủ yếu tổng hợp nguồn, chưa kiểm chứng độc lập toàn bộ đường dẫn và tính phù hợp của từng tài liệu. | Tôi cần đối chiếu lại nguồn với nội dung research của nhóm, chỉ giữ tài liệu liên quan trực tiếp đến vấn đề và không xem nguồn chưa kiểm tra là bằng chứng đã xác thực. |
+| **CP5 Quy trình** | Không trực tiếp phụ trách phần này. | — | — | — |
+| **CP5–6 Problem Statement** | Không trực tiếp phụ trách phần Problem Statement của nhóm. | — | — | — |
+| **CP6 Mức can thiệp / quyết định** | Tôi dùng ChatGPT hỗ trợ phân tích 4 mức No AI, Rule, Workflow, Agent; xây dựng AI Canvas, đánh giá rủi ro và gợi ý nội dung kết luận, hạn chế, hướng tiếp theo. | AI giúp tôi hệ thống hóa các phương án, làm rõ ưu nhược điểm, xác định tiêu chí đánh giá và đề xuất phương án Workflow có con người kiểm tra. | AI đưa ra các ngưỡng như độ chính xác ≥ 90%, thử nghiệm 3 đoạn chat và quyết định Go dù nhóm chưa có kết quả pilot thực tế. Các nội dung này mới là đề xuất, chưa được kiểm chứng. | Tôi cần phân biệt rõ dữ liệu đã kiểm chứng với mục tiêu dự kiến, chỉ đề xuất Go cho pilot nhỏ thay vì triển khai chính thức và giữ phương án No AI nếu thử nghiệm không đạt yêu cầu. |
 
 ## 6. Reflection (CP7)
 
@@ -209,8 +209,10 @@ Khi nghe top 3, tôi nhận ra cùng 1 vấn đề còn tồn tại thêm rất 
 
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
 Có, đôi lúc bị lao vào giải quyết vấn đề ngay mà chưa xem xét xem vấn đề có thật sự cần giải quyết hay không. Lúc đó nhóm có nhận ra, và check lại các list vấn đề và chọn vấn đề cần ưu tiên giải trước.
+
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
  Khi nhóm thảo luận về việc ứng dụng AI để tóm tắt thông tin trong Zalo/Discord. Ban đầu, tôi nghiêng về hướng sử dụng AI vì nghĩ rằng nó sẽ giúp tiết kiệm nhiều thời gian. Nhưng sau khi xem xét việc ghim những quyết định quan trọng hoặc ghi trực tiếp vào bảng phân công có giải quyết được vấn đề hay không, tôi nhận ra không phải trường hợp nào cũng cần AI. Nếu nhóm ít thành viên, trao đổi trực tiếp và có cách ghi chép rõ ràng thì giải pháp thủ công thì đã đủ hiệu quả mà không cần dùng AI.
+
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
 Quá trình kiểm chứng có làm tôi bất ngờ vì kết quả khảo sát rất khác so với suy nghĩ ban đầu. Khảo sát thực tế khác rất nhiều so với lý thuyết.
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
@@ -218,9 +220,28 @@ Khó nhất là xác định đúng vấn đề cốt lõi và giới hạn ph�
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
 Nếu làm lại, tôi sẽ dành nhiều thời gian hơn để phân tích và kiểm chứng từng vấn đề trước khi lựa chọn. Tôi cũng muốn nhóm xác định rõ bước nghẽn và thử các cách giải quyết đơn giản trước khi dùng AI. Khi phản biện, tôi sẽ đặt nhiều câu hỏi hơn về mức độ cần thiết của vấn đề, chẳng hạn như vấn đề này xảy ra bao nhiêu lần, ảnh hưởng đến bao nhiêu người và nếu không giải quyết thì hậu quả có thực sự lớn không. Tôi cũng sẽ chú ý hơn đến việc AI có thể tạo ra lỗi gì, ai chịu trách nhiệm kiểm tra và liệu lợi ích mang lại có xứng đáng với thời gian triển khai hay không.
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi *problem → quy trình → metric → boundary → mức can thiệp AI → quyết định* của bài nhóm mình.
-
+Bài toán nhóm tôi chọn là các thành viên mất nhiều thời gian để tìm lại quyết định đã chốt, người phụ trách và deadline trong các đoạn chat Zalo/Discord. Quy trình hiện tại là mở nhóm chat, tìm kiếm tin nhắn cũ, đọc lại nội dung thảo luận và hỏi các thành viên khác nếu chưa xác định được thông tin cuối cùng. Nhóm xác định bước nghẽn chính là phải đọc nhiều tin nhắn để phân biệt ý kiến đang thảo luận với quyết định đã thống nhất. Metric đặt ra là giảm thời gian tìm kiếm từ 8–15 phút xuống dưới 2 phút/lần, đồng thời hạn chế bỏ sót thông tin và phân công sai người. Boundary là AI không được tự quyết định, tự phân công công việc hoặc đưa ra thông tin không có bằng chứng, mọi kết quả đều cần con người kiểm tra. Nhóm lựa chọn mức Workflow bán tự động, trong đó AI hỗ trợ trích xuất và tóm tắt thông tin, còn con người xác nhận kết quả cuối cùng. Quyết định đề xuất là Go cho pilot nhỏ, thử nghiệm trên 3 đoạn chat để đánh giá hiệu quả trước khi triển khai rộng hơn; nếu không đạt yêu cầu thì quay về phương án No AI/Rule.
 
 
 ## 7. Tài liệu tham khảo
 
--
+1. **Báo cáo kiểm chứng CP4 của nhóm ABC100.** Kết quả phỏng vấn và khảo sát 8 học viên về thời gian tìm lại quyết định, phân công công việc trong nhóm chat.  
+   File nội bộ: `report/assets/cp4-survey-and-interviews.md`
+
+2. **Discord Support — Using Search.** Hướng dẫn sử dụng chức năng tìm kiếm và bộ lọc tin nhắn trên Discord.  
+   https://support.discord.com/hc/en-us/articles/115000468588-Using-Search
+
+3. **Discord Support — Pinned Messages.** Hướng dẫn ghim và quản lý tin nhắn quan trọng trong Discord.  
+   https://support.discord.com/hc/en-us/articles/220403608-Pinned-Messages
+
+4. **Slack Help Center — Guide to AI features in Slack.** Tham khảo cách AI tóm tắt hội thoại, tổng hợp thông tin và dẫn về nguồn tin nhắn.  
+   https://slack.com/help/articles/25076892548883-Guide-to-AI-features-in-Slack
+
+5. **n8n Documentation — Discord Node.** Tham khảo khả năng xây dựng quy trình tự động hóa liên quan đến Discord.  
+   https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.discord/
+
+6. **Google — NotebookLM Help.** Tham khảo công cụ hỗ trợ tổng hợp thông tin từ tài liệu nguồn và trích dẫn để kiểm chứng nội dung.  
+   https://support.google.com/notebooklm
+
+7. **Báo cáo nhóm ABC100 — Day 02 Discovery & Problem Framing.** Nguồn tổng hợp kết quả CP3–CP6, Assumption Map, kiểm chứng và so sánh các phương án giải quyết.  
+   File nội bộ: `report/team/group_report.md`
