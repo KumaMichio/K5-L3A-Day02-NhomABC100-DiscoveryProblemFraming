@@ -111,80 +111,82 @@ Ghi chú chấm:
 
 ### 3.2. Kiểm chứng
 
-**Cách đã dùng:** Phỏng vấn sâu **5 học viên** + khảo sát nhanh (micro-survey) mở rộng tổng cộng **8 học viên** thuộc các **nhóm 4 người khác nhau trong lớp L3A** (theo đúng 3 luật của *The Mom Test*: chỉ hỏi về tình huống thật vừa xảy ra sáng nay/tối qua khi làm Lab trên Zalo nhóm + GitHub chung, cách họ đang tự xoay xở và thời gian mất thật; không hỏi câu giả định *"Bạn có muốn..."*), kết hợp đối chiếu log tin nhắn Zalo/Discord và lịch sử commit GitHub thực tế.
-*(Bảng dữ liệu chi tiết 8 học viên được lưu tại [`report/assets/cp4-survey-and-interviews.md`](../assets/cp4-survey-and-interviews.md)).*
+**Cách đã dùng:** Khảo sát thực tế bằng bảng hỏi cấu trúc (Google Forms gồm 11 câu hỏi `Q1`–`Q11` thiết kế theo nguyên tắc *The Mom Test* — chỉ hỏi về hành vi thật đã xảy ra trong những ngày đầu Khóa AI thực chiến và 1 tháng qua, không hỏi câu dẫn dắt/giả định) thu được **9 phản hồi thực tế (`HV01`–`HV09`)** từ các học viên trong khóa, kết hợp phỏng vấn nhanh trực tiếp tại lớp với học viên để lại đăng ký trao đổi thêm ở `Q11` (`HV06`) và đối chiếu log Zalo/Discord + lịch sử commit GitHub của nhóm ABC100.
+- **Link Google Sheets dữ liệu thật:** [Google Sheets — Dữ liệu khảo sát CP4 (`N = 9`)](https://docs.google.com/spreadsheets/d/1UA0i4ZOfev5-8-MbpuRXZajs50KR8kp0O6rZIpSSzCY/edit?resourcekey=&gid=1731896032#gid=1731896032)
+- **Bản sao lưu trong repo:** [`report/assets/cp4-survey-and-interviews.md`](../assets/cp4-survey-and-interviews.md) và [`report/assets/cp4-survey-and-interviews.xlsx`](../assets/cp4-survey-and-interviews.xlsx).
 
-**Câu hỏi khung nhóm đã dùng (tuân thủ The Mom Test):**
-1. *"Trong nhóm 4 người lớp L3A của bạn, nhóm đang trao đổi công việc chính qua kênh nào (Zalo nhóm + GitHub chung / Discord / Bàn trực tiếp tại lớp)?"*
-2. *"Lần gần nhất sáng nay hoặc tối qua khi chia việc CP3–CP6 và merge file lên GitHub, bạn có phải kéo lại chat Zalo/Discord để xem ai nhận mục nào hoặc nhóm chốt đề tài nào không? Mất khoảng bao nhiêu phút?"*
-3. *"Lúc đó bạn đã tìm lại bằng cách nào (cuộn lại chat, gõ từ khóa tìm kiếm, xem tin nhắn Ghim hay hỏi lại nhóm) và gặp trục trặc gì?"*
+**Bộ 11 câu hỏi khảo sát thực tế nhóm đã dùng (tuân thủ The Mom Test):**
+- **Q1–Q2 (Bối cảnh thật):** *"Bạn đang làm việc nhóm với bao nhiêu người?"* & *"Nhóm bạn trao đổi công việc chủ yếu qua kênh nào?"*
+- **Q3–Q6 (Tần suất, thông tin thất lạc, thời gian mất & workaround lần gần nhất):** *"Trong những ngày bắt đầu Khóa AI thực chiến, bạn đã mấy lần phải tìm lại hoặc hỏi lại 'nhóm đã chốt gì / ai làm phần nào / hạn khi nào'?"*, *"Lần gần nhất, bạn đã cần tìm lại thông tin gì?"*, *"Mất khoảng bao lâu mới có được câu trả lời?"*, *"Bạn đã làm gì để có câu trả lời?"*
+- **Q7–Q9 (Hệ quả thực tế & giới hạn của các cách đã thử):** *"Trong 1 tháng qua, có lần nào vì không tìm lại được thông tin mà bạn hoặc nhóm làm trùng, làm sai hoặc trễ việc không?"*, *"Nhóm bạn đã từng thử cách nào để đỡ phải tìm lại?"*, *"Cách đó hiện nhóm bạn còn dùng đều không?"*
+- **Q10–Q11 (Mức độ phiền toái 1–5 & Sẵn lòng phỏng vấn sâu 5 phút):** *"Việc phải tìm lại thông tin đã chốt trong chat nhóm phiền đến mức nào (1–5)?"* & *"Bạn có sẵn lòng nói chuyện thêm 5 phút về chuyện này không?"*
 
-#### Interview Snapshot #1 (HV01)
+#### Case Snapshot #1 — HV06 (Nhóm 4–5 người, sẵn lòng trao đổi thêm 5 phút ở `Q11 = Có`)
 
-| Trường | Nội dung |
+| Trường | Nội dung (Dữ liệu thật lúc `09/11/2026 12:08:25` + trao đổi trực tiếp 5 phút) |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | Nhóm trưởng một nhóm 4 người lớp L3A (dùng Zalo nhóm + GitHub chung) |
-| Câu nói đáng nhớ nhất (nguyên văn) | *"Tìm bằng từ khóa trên Zalo chỉ ra một đống tin nhắn có chữ CP4 thôi, chứ muốn biết cuối cùng chốt ai làm mục nào thì vẫn phải ngồi kéo đọc lại cả đoạn dài vì lúc đầu bàn một kiểu, 15 phút sau lại đổi."* |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Lúc chia việc CP3–CP6 và merge file lên GitHub: phải kéo lại hơn 150 tin nhắn Zalo xem cuối cùng nhóm chốt đề tài nào trong 12 ý tưởng và ai nhận mục số mấy trong `group_report.md`. |
-| Hiện đang xử lý bằng cách nào (workaround)? | Dùng ô tìm kiếm từ khóa trên Zalo rồi cuộn lên cuộn xuống đọc dò lại cả đoạn hội thoại; nếu lười tìm thì nhắn hỏi lại thẳng vào nhóm chờ các bạn trả lời. |
-| Mất bao lâu, bao lần? | Khoảng 10–12 phút/lần tự lục tìm; một tuần gặp khoảng 5 lần (nhất là lúc ghép bài nhóm). |
-| Insight / opportunity rút ra | Tìm kiếm từ khóa (keyword search) không giải quyết được bài toán vì **quyết định cuối cùng phụ thuộc vào ngữ cảnh cả đoạn hội thoại** (ai đồng ý, ai đổi phần việc). |
+| Người được hỏi (vai trò, không ghi tên thật) | Học viên làm việc trong nhóm **4–5 người** (và nhóm 2–3 người), trao đổi qua **Zalo, Slack / Teams** (`HV06` — chọn `Q11 = Có`) |
+| Dữ liệu hành vi từ khảo sát & chia sẻ | Chỉ trong những ngày đầu Khóa AI thực chiến đã phải tìm/hỏi lại **3–5 lần** cho cả 4 loại thông tin: **Quyết định/phương án nhóm đã chốt, Ai phụ trách phần việc nào, Deadline/mốc thời gian, Link tài liệu/file** (mức độ phiền **4/5**). |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Khi làm bài tập nhóm trong khóa, dù nhóm đã có biên bản và bảng phân công chung, nhưng các thay đổi nhỏ và link tài liệu mới phát sinh liên tục trên Zalo khiến bạn vẫn phải lội lại chat để tìm. |
+| Hiện đang xử lý bằng cách nào (workaround)? | Kết hợp 3 thao tác: **Cuộn lại lịch sử chat + Mở file biên bản / bảng phân công + Hỏi lại trong nhóm hoặc nhắn riêng một người** (`Q6`). Đã áp dụng: **Ghim (pin) tin nhắn quan trọng, Ghi biên bản sau mỗi buổi họp, Bảng phân công chung (Sheets, Notion, Trello…)** (`Q8`). |
+| Mất bao lâu, bao lần? | Mất **5–10 phút/lần**, **3–5 lần** chỉ tính trong những ngày đầu Khóa AI thực chiến. |
+| Insight / opportunity rút ra | **Độ lệch giữa cảm nhận và thực tế (The Mom Test):** Dù ở `Q9` bạn đánh giá các công cụ hiện tại là *"Còn dùng đều, giải quyết được gần hết"*, nhưng hành vi thực tế ở `Q3, Q5, Q6` cho thấy bạn vẫn mất **5–10 phút/lần (3–5 lần)** để cuộn chat và hỏi lại vì các chốt việc nhanh trên Zalo không được đồng bộ ngay vào bảng phân công. |
 
-#### Interview Snapshot #2 (HV02)
+#### Case Snapshot #2 — HV03 (Trường hợp mất thời gian nặng nhất: `Trên 20 phút / không tìm ra`)
 
-| Trường | Nội dung |
+| Trường | Nội dung (Dữ liệu thật lúc `09/11/2026 12:06:44`) |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | Thành viên một nhóm 4 người lớp L3A (dùng Zalo nhóm + Discord + GitHub chung) |
-| Câu nói đáng nhớ nhất (nguyên văn) | *"Trên Zalo nhắn câu cụt lủn 'bạn làm phần 4 nhé', đến lúc mở file `group_report.md` ra thì CP4 lại nằm ở Mục 3, thế là làm nhầm sang Mục 4 mất 15 phút phải khôi phục lại."* |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Sáng nay khi nhận việc làm báo cáo nhóm: trên chat Zalo chỉ nhắn ngắn gọn *"làm phần 4 nhé"*, người nhận hiểu thành Mục 4 (Quy trình trước/sau — CP5) trong khi ý nhóm là Checkpoint 4 (Mục 3 trong file), dẫn đến viết nhầm mục và phải kéo lại chat đối chiếu để khôi phục. |
-| Hiện đang xử lý bằng cách nào (workaround)? | Kéo cuộn lại tin nhắn Zalo để đối chiếu xem lúc nãy nhóm bàn theo số Checkpoint (`CP4`) hay số Mục (`Mục 4`) trong file báo cáo rồi nhắn hỏi lại. |
-| Mất bao lâu, bao lần? | Mất 10–15 phút đọc lại và sửa lại file; 4 lần/tuần khi chia các mục nhỏ trong nhóm 4 người. |
-| Insight / opportunity rút ra | Khi trao đổi nhanh trên chat, các thành viên dùng từ viết tắt/ngắn gọn (*"phần 4" vs "CP4"*), nếu không có bảng chốt ghi rõ **Tên Checkpoint + Mục số mấy trong file + Người làm** thì rất dễ làm nhầm phần của nhau. |
+| Người được hỏi (vai trò, không ghi tên thật) | Học viên làm việc nhóm (**2–3 người, 6 người trở lên**), trao đổi qua **Zalo, Messenger** (`HV03`) |
+| Dữ liệu hành vi từ khảo sát | Phải tìm/hỏi lại **Trên 5 lần** từ đầu khóa; xác nhận **Có bị làm trùng, làm sai hoặc trễ việc trong 1 tháng qua (`Q7 = Có`)** do không tìm lại được thông tin; chấm mức độ phiền **4/5**. |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Cần tìm lại đồng thời **Quyết định/phương án nhóm đã chốt, Ai phụ trách phần việc nào, Deadline/mốc thời gian và Link tài liệu/file** (`Q4`), nhưng sau khi thử mọi cách tìm kiếm trên Zalo/Messenger vẫn mất **Trên 20 phút / không tìm ra** (`Q5`). |
+| Hiện đang xử lý bằng cách nào (workaround)? | Đã làm cả 4 bước: **Cuộn lại lịch sử chat + Dùng ô tìm kiếm trong app chat + Xem tin nhắn đã ghim (pin) + Hỏi lại trong nhóm hoặc nhắn riêng một người** (`Q6`). |
+| Mất bao lâu, bao lần? | **Trên 20 phút / không tìm ra** ở lần gần nhất; lặp lại **Trên 5 lần** trong những ngày đầu khóa. |
+| Insight / opportunity rút ra | Khi nhóm trao đổi qua **Zalo/Messenger**, ngay cả khi đã thử **ô tìm kiếm (Search)** và **xem tin nhắn ghim (Pin)**, người dùng vẫn có thể mất **trên 20 phút mà không tìm ra** quyết định và link file cũ, dẫn trực tiếp đến hậu quả **làm trùng, làm sai hoặc trễ việc (`Q7 = Có`)**. |
 
-#### Interview Snapshot #3 (HV03)
+#### Case Snapshot #3 — HV01 & HV05 (Bằng chứng vì sao phương án No AI thất bại: `"Còn dùng nhưng hay quên cập nhật"`)
 
-| Trường | Nội dung |
+| Trường | Nội dung (Dữ liệu thật lúc `12:04:17` và `12:08:13`) |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | Thành viên phụ trách ghép bài của một nhóm 4 người lớp L3A (dùng Zalo nhóm + GitHub chung) |
-| Câu nói đáng nhớ nhất (nguyên văn) | *"Sợ nhất là một bạn nhắn báo đã điền `TEAM.md` chỉ 1 câu ngắn rồi bị 20 tin nhắn bàn CP3 trôi đè lên, bạn sau không đọc kịp cứ thế push đè lên làm mất luôn phần của bạn trước."* |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Khi 4 thành viên cùng sửa chung repo nhóm: thành viên A vừa cập nhật mục cá nhân vào `TEAM.md` và nhắn báo trên Zalo, nhưng tin nhắn bị trôi; thành viên B sửa trên bản cũ rồi push lên ghi đè làm mất phần khai báo trong `TEAM.md` của thành viên A. |
-| Hiện đang xử lý bằng cách nào (workaround)? | Mở lịch sử `git log` đối chiếu với giờ nhắn tin trên Zalo rồi nhắn hỏi lại từng người và khôi phục lại đoạn bị mất. |
-| Mất bao lâu, bao lần? | Mất 12–15 phút rà lại chat và lịch sử commit; 4–5 lần/tuần. |
-| Insight / opportunity rút ra | Nỗi đau không chỉ là tìm "quyết định đã chốt" mà còn là **nắm được trạng thái cập nhật mới nhất của 4 thành viên và các blocker/lỗi quyền Git (như lỗi 403 chưa accept lời mời)** bị trôi trong luồng chat. |
+| Người được hỏi (vai trò, không ghi tên thật) | Hai học viên làm việc nhóm **4–5 người** (`HV01`) và **2–3 người** (`HV05`), trao đổi chính qua **Zalo, Messenger** |
+| Dữ liệu hành vi từ khảo sát | Cả hai đều xác nhận ở `Q9`: **`"Còn dùng nhưng hay quên cập nhật"`** và đều xác nhận ở `Q7`: **`"Có"` (đã từng làm trùng, làm sai hoặc trễ việc trong 1 tháng qua vì không tìm lại được thông tin)**. |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Cả hai đều cần tìm lại đủ 4 mục: **Quyết định nhóm đã chốt, Ai phụ trách phần việc nào, Deadline, Link tài liệu/file** (`Q4`). Dù nhóm đã lập đủ **Ghim (pin) tin nhắn + Biên bản họp + Bảng phân công chung (Sheets/Notion/Trello)** (`Q8`), nhưng khi thảo luận nhanh trên chat thì quên cập nhật vào bảng/pin. |
+| Hiện đang xử lý bằng cách nào (workaround)? | Phải làm đồng thời cả 5 thao tác: **Cuộn lại lịch sử chat + Dùng ô tìm kiếm + Xem tin nhắn đã ghim + Mở file biên bản/bảng phân công + Hỏi lại trong nhóm/nhắn riêng** (`Q6`). |
+| Mất bao lâu, bao lần? | `HV01`: **2–5 phút/lần**, **3–5 lần** từ đầu khóa; `HV05`: **10–20 phút/lần**, **Trên 5 lần** từ đầu khóa. |
+| Insight / opportunity rút ra | **Xác nhận Giả định #3:** Phương án No AI (Pin tin nhắn, Biên bản, Bảng phân công Sheets/Notion) đã được **88.9% học viên thử dùng**, nhưng **55.6% (5/9 người) thất bại ở bước duy trì vì "hay quên cập nhật"**, khiến thành viên phải mở cùng lúc cả chat, pin lẫn file bảng phân công mà vẫn bị làm sai/trễ việc. |
 
-#### Interview Snapshot #4 (HV04) *(Tín hiệu phản bác)*
+#### Case Snapshot #4 — HV07 *(Tín hiệu phản bác một phần về thời gian tìm kiếm: chỉ mất `Dưới 2 phút`)*
 
-| Trường | Nội dung |
+| Trường | Nội dung (Dữ liệu thật lúc `09/11/2026 12:09:03`) |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | Thành viên một nhóm 4 người ngồi cùng bàn trên lớp L3A (trao đổi trực tiếp tại bàn + GitHub) |
-| Câu nói đáng nhớ nhất (nguyên văn) | *"Nhóm mình 4 người ngồi sát nhau cùng bàn trên lớp, bàn gì nói miệng 2 phút rồi gõ thẳng vào file `TEAM.md` trên GitHub luôn, trên Zalo chỉ nhắn vài câu gửi link nên không mất công lục tìm."* |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Sáng nay khi chia việc CP3–CP6, cả 4 người ngồi cùng bàn, thống nhất miệng và 1 người điền thẳng tên người phụ trách từng Checkpoint vào bảng phân công trong `TEAM.md`. |
-| Hiện đang xử lý bằng cách nào (workaround)? | Bàn trực tiếp tại bàn và ghi thẳng vào bảng phân công duy nhất trong file Markdown (`TEAM.md`), hầu như không bàn dài dòng qua tin nhắn Zalo. |
-| Mất bao lâu, bao lần? | Chỉ mất 1–2 phút mở file `TEAM.md` hoặc kéo vài tin nhắn Zalo. |
-| Insight / opportunity rút ra | **Tín hiệu phản bác rất rõ:** Với nhóm 4 người ngồi trực tiếp cùng bàn trên lớp (co-located) và ít nhắn tin (< 20 tin nhắn/ngày), phương án **No AI (ghi thẳng vào bảng `TEAM.md`) là hoàn toàn đủ**, không cần công cụ tóm tắt chat. |
+| Người được hỏi (vai trò, không ghi tên thật) | Học viên làm việc trong nhóm **4–5 người**, trao đổi qua **Zalo, Discord** (`HV07`) |
+| Dữ liệu hành vi từ khảo sát | Chỉ phải tìm lại **1–2 lần** từ đầu khóa (`Q3`), lần gần nhất chỉ tìm **Ai phụ trách phần việc nào** (`Q4`) và chỉ mất **Dưới 2 phút** (`Q5`) bằng cách **Dùng ô tìm kiếm trong app chat** (`Q6`). |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Tuy tìm nhanh dưới 2 phút ở lần gần nhất, nhưng ở `Q7` bạn vẫn xác nhận **Có bị làm trùng, làm sai hoặc trễ việc trong 1 tháng qua**, ở `Q9` xác nhận **Ghim (pin) tin nhắn quan trọng: "Còn dùng nhưng hay quên cập nhật"**, và chấm mức độ phiền **4/5** (`Q10`). |
+| Hiện đang xử lý bằng cách nào (workaround)? | Gõ từ khóa vào ô tìm kiếm trong app chat Zalo/Discord và xem tin nhắn ghim (nhưng tin ghim hay quên cập nhật). |
+| Mất bao lâu, bao lần? | **Dưới 2 phút/lần**, **1–2 lần** từ đầu khóa. |
+| Insight / opportunity rút ra | **Tín hiệu phản bác giúp hiệu chỉnh bài toán:** Không phải mọi lần tìm kiếm đều mất 8–15 phút (có **1/9 người mất < 2 phút** và **2/9 người mất 2–5 phút** khi chỉ tra cứu nhanh 1 thông tin đơn lẻ). Tuy nhiên, ngay cả khi tra cứu nhanh, việc **quên cập nhật tin nhắn Pin khi đổi phân công** vẫn gây ra **làm trùng/làm sai việc (`Q7 = Có`)**. Do đó giá trị cốt lõi không chỉ là giảm số phút cuộn chat, mà là **chống sót/nhầm việc khi phân công thay đổi**. |
 
-#### Interview Snapshot #5 (HV05)
+#### Case Snapshot #5 — HV09 & HV02 *(Đã thử `Bot / tính năng tóm tắt tự động` trên Discord & Phản bác về hậu quả làm sai)*
 
-| Trường | Nội dung |
+| Trường | Nội dung (Dữ liệu thật lúc `12:16:33` và `12:05:09`) |
 |---|---|
-| Người được hỏi (vai trò, không ghi tên thật) | Nhóm trưởng một nhóm 4 người lớp L3A (làm việc kết hợp buổi tối qua Zalo + Google Meet) |
-| Câu nói đáng nhớ nhất (nguyên văn) | *"Nếu có bản tóm tắt thì mình vẫn phải nhìn được câu gốc bạn ấy nhắn là gì, chứ công cụ mà tự suy diễn rồi ghi 'bạn A nhận làm phần 5' trong khi bạn ấy mới chỉ hỏi 'phần 5 làm thế nào?' là làm trùng việc ngay."* |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Tối hôm trước khi chốt phân công làm bài lab: thử copy một đoạn chat Zalo dài dán vào ChatGPT nhờ tóm tắt việc cần làm; ChatGPT thấy một bạn hỏi về mục C liền ghi luôn bạn đó phụ trách mục C, may mà nhóm trưởng đọc lại phát hiện kịp. |
-| Hiện đang xử lý bằng cách nào (workaround)? | Khi nhờ AI tóm tắt đoạn chat dài, nhóm trưởng vẫn phải tự cuộn Zalo dò lại từng tên người với đoạn chat gốc trước khi gửi lên nhóm. |
-| Mất bao lâu, bao lần? | Dán vào AI mất 1 phút nhưng dò lại mất 5–7 phút vì AI không trích dẫn dòng tin nhắn gốc; làm 3–4 lần/tuần. |
-| Insight / opportunity rút ra | Người dùng muốn **được hỗ trợ (augment)** chứ không giao phó hoàn toàn; bản tóm tắt **bắt buộc phải kèm trích dẫn nguyên văn câu chat gốc** để người duyệt kiểm tra trong 1–2 phút và tránh lỗi "gán nhầm việc". |
+| Người được hỏi (vai trò, không ghi tên thật) | Hai học viên làm việc trong nhóm **4–5 người** dùng **Discord** (`HV09`) và đa kênh **Zalo, Discord, Messenger, Slack/Teams** (`HV02`) |
+| Dữ liệu hành vi từ khảo sát | Cả hai đều phải tìm lại **Trên 5 lần** từ đầu khóa (`Q3`) và đều mất **5–10 phút/lần** (`Q5`), độ phiền **4/5** (`HV09`) và **5/5** (`HV02`). Đặc biệt: `HV09` đã thử dùng **Bot / tính năng tóm tắt tự động** (`Q8`) nhưng đánh giá **`"Còn dùng nhưng hay quên cập nhật"`** (`Q9`); còn `HV02` là người duy nhất chọn **`Q7 = Không`** (chưa bị làm trùng/sai/trễ). |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | `HV09` cần tìm lại **Deadline / mốc thời gian và Link tài liệu, file** (`Q4`) trên Discord; dù nhóm từng thử Bot/tóm tắt tự động nhưng không duy trì cập nhật đều nên vẫn phải tự cuộn lịch sử chat và dùng ô tìm kiếm mất 5–10 phút. |
+| Hiện đang xử lý bằng cách nào (workaround)? | Cuộn lại lịch sử chat + Dùng ô tìm kiếm trong app chat (`HV09`); kết hợp hỏi lại nhóm và mở bảng phân công để kiểm tra chéo nên không bị làm sai (`HV02`). |
+| Mất bao lâu, bao lần? | Mất **5–10 phút/lần**, lặp lại **Trên 5 lần** chỉ trong những ngày đầu Khóa AI thực chiến. |
+| Insight / opportunity rút ra | (1) **Bài học từ `HV09`:** Ngay cả khi có **Bot / tính năng tóm tắt tự động**, nếu đầu ra không trích xuất đúng các trường hay bị thất lạc nhất (**Deadline 88.9%, Link tài liệu/file 77.8%, Người phụ trách 77.8%, Quyết định chốt 77.8%**) và không gắn vào nhịp chốt việc của nhóm thì vẫn bị bỏ quên. <br>(2) **Tín hiệu phản bác từ `HV02`:** Có thể tránh làm sai (`Q7 = Không`) nếu chấp nhận bỏ ra **5–10 phút/lần (> 5 lần)** kiểm tra đủ mọi nguồn, nhưng cái giá phải trả là sự phiền toái ở mức tối đa (**5/5**). |
 
-#### Tổng hợp kết quả kiểm chứng (8 học viên từ các nhóm 4 người lớp L3A)
+#### Tổng hợp kết quả kiểm chứng (`N = 9` học viên thực tế từ Google Sheets)
 
-| Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
+| Nguồn | Số người / số mẫu | Tín hiệu xác nhận (Confirming Signals) | Tín hiệu phản bác / Điều chỉnh (Disconfirming Signals) |
 |---|---:|---|---|
-| Phỏng vấn sâu & Khảo sát nhanh (theo *The Mom Test*, chi tiết tại [`cp4-survey-and-interviews.md`](../assets/cp4-survey-and-interviews.md)) | **8 học viên** (thuộc các nhóm 4 người khác nhau trong lớp L3A) | **7/8 học viên** xác nhận mất **8–15 phút/lần** (3–5 lần/tuần) để cuộn lại chat Zalo/Discord tìm quyết định chốt, phân công mục bài làm (`CP4` vs `Mục 4`) và trạng thái merge GitHub; xác nhận việc ghim tin nhắn (Pin) thủ công vẫn bị lệch khi 2 thành viên đổi việc cho nhau ở dưới luồng chat mà quên ghim lại (HV08). | **1/8 học viên (HV04)** (nhóm 4 người ngồi sát cùng bàn trên lớp, < 20 tin nhắn/ngày) cho biết không gặp pain này vì nói miệng 2 phút và điền thẳng vào `TEAM.md` là đủ. **1/8 học viên (HV05)** cảnh báo AI dễ nhầm "câu hỏi đang bàn" thành "quyết định đã chốt" nếu không trích dẫn câu gốc. |
-| Đối chiếu lịch sử chat & Git log thực tế của nhóm ABC100 (4 thành viên) | 2 kênh (Zalo/Discord + Git log của nhóm 4 người) | Đếm thực tế có **6 lần hỏi lại** quyết định/link trên Zalo (10–15'/lần), **4–6 lần/tuần** cuộn tìm trên Discord (8–12'/lần), và **1 lần ghi đè `TEAM.md` + 1 lần hiểu nhầm "Phần 4" vs "CP4"** ngay trong buổi làm bài do thông tin chốt trôi trong chat. | Với các thông báo ngắn dưới 15 tin nhắn thì đọc lướt mắt thường trong 1 phút nhanh hơn dùng công cụ. |
+| **Khảo sát thực tế trên Google Forms/Sheets** ([Link Google Sheets](https://docs.google.com/spreadsheets/d/1UA0i4ZOfev5-8-MbpuRXZajs50KR8kp0O6rZIpSSzCY/edit?resourcekey=&gid=1731896032#gid=1731896032), bản lưu [`cp4-survey-and-interviews.md`](../assets/cp4-survey-and-interviews.md) & [`.xlsx`](../assets/cp4-survey-and-interviews.xlsx)) + trao đổi thêm với `HV06` (`Q11 = Có`) | **9 học viên** trong Khóa AI thực chiến (**7/9 = 77.8%** thuộc nhóm **4–5 người**; **77.8% dùng Zalo**, **44.4% dùng Discord**) | - **Tần suất cao (`Q3`):** **7/9 học viên (77.8%)** đã phải tìm/hỏi lại từ **3–5 lần (33.3%)** đến **Trên 5 lần (44.4%)** chỉ trong những ngày đầu khóa.<br>- **Thời gian mất (`Q5`):** **6/9 học viên (66.7%)** mất từ **5–10 phút (44.4%)**, **10–20 phút (11.1%)** đến **Trên 20 phút / không tìm ra (11.1%)**.<br>- **Hậu quả thật (`Q7`):** **5/9 học viên (55.6%)** xác nhận **Có** làm trùng, làm sai hoặc trễ việc trong 1 tháng qua.<br>- **Giới hạn của No AI (`Q8, Q9`):** Dù **88.9%** đã dùng Pin và **55.6%** đã lập Bảng phân công/Biên bản, nhưng **55.6% (5/9) thất bại vì `"Còn dùng nhưng hay quên cập nhật"`**.<br>- **Độ phiền (`Q10`):** Trung bình **3.89/5**, với **77.8% chấm mức 4–5/5**. | - **Thời gian tìm kiếm ngắn hơn ở một số trường hợp (`Q5`):** Có **1/9 học viên (`HV07` — 11.1%)** chỉ mất **Dưới 2 phút** và **2/9 học viên (`HV01, HV04` — 22.2%)** mất **2–5 phút** (nên con số giả định ban đầu `8–15 phút` cần được điều chỉnh lại thành phổ biến nhất là **`5–10 phút`**, dải rộng từ `2–5 phút` đến `> 20 phút`).<br>- **Cảm nhận về cách hiện tại (`Q9`):** Có **3/9 học viên (`HV03, HV06, HV08`)** chọn *"Còn dùng đều, giải quyết được gần hết"*, dù dữ liệu chéo ở `Q5, Q7` cho thấy cả 3 vẫn mất 5–20+ phút tìm lại và 2/3 vẫn bị làm sai/trễ.<br>- **Hậu quả (`Q7`):** **1/9 học viên (`HV02`)** xác nhận **Không** bị làm trùng/sai/trễ (nhưng mất 5–10'/lần, >5 lần và chấm độ phiền 5/5). |
+| **Đối chiếu lịch sử chat & Git log thực tế của nhóm ABC100 (4 thành viên)** | 2 kênh (Zalo/Discord + Git log của nhóm 4 người) | Đếm thực tế có **6 lần hỏi lại** quyết định/link trên Zalo, **4–6 lần/tuần** cuộn tìm trên Discord, và **1 lần ghi đè `TEAM.md` + 1 lần hiểu nhầm "Phần 4" vs "CP4"** ngay trong buổi làm bài do thông tin chốt trôi trong chat. | Với các câu hỏi đơn lẻ chỉ tra cứu 1 từ khóa ngắn thì gõ ô tìm kiếm mất dưới 2 phút là đủ (`HV07`). |
 
-**Nhóm đã sửa problem thế nào sau kiểm chứng:**
-1. **Thu hẹp Actor và bối cảnh (nhờ tín hiệu phản bác ở HV04):** Không phát biểu bài toán cho "mọi nhóm học tập" chung chung, mà thu hẹp rõ vào: **"Nhóm học tập/dự án 4 người trao đổi công việc trực tuyến qua Zalo/Discord kết hợp GitHub chung với lượng tin nhắn lớn (> 50 tin nhắn/buổi thảo luận)"**. Với nhóm 4 người ngồi trực tiếp cùng bàn trên lớp và ít nhắn tin (< 20 tin/ngày), nhóm khuyến nghị dùng thẳng **No AI** (điền trực tiếp vào `TEAM.md`).
-2. **Làm sắc nét Bottleneck & Đầu ra cần có (nhờ HV01, HV02, HV03):** Đổi từ "tìm lại tin nhắn cũ" sang **"rút trích 3 thông tin cốt lõi: (1) Quyết định đã chốt, (2) Đầu việc (ghi rõ cả mã Checkpoint và số Mục trong file) – Người nhận – Hạn, (3) Trạng thái file dùng chung (`TEAM.md`/`group_report.md`) & Blocker đang chờ hỗ trợ — kèm câu trích dẫn nguyên văn từ đoạn chat"**.
-3. **Bổ sung điều kiện Boundary & Metric chất lượng (nhờ HV05, HV08):** Bắt buộc bản tóm tắt phải đính kèm trích dẫn câu gốc để người duyệt kiểm tra trong 2 phút, và tuyệt đối không tự gán người phụ trách khi câu chat chỉ đang hỏi hoặc đề xuất.
+**Nhóm đã sửa problem thế nào sau kiểm chứng (dựa trên dữ liệu thật `N = 9`):**
+1. **Hiệu chỉnh lại số đo Thời gian & Tần suất sát thực tế khảo sát (`Q3, Q5`):** Thay vì giả định cứng mọi người đều mất `8–15 phút/lần`, nhóm cập nhật lại theo phân bố thật: **66.7% học viên mất từ 5–20+ phút/lần (phổ biến nhất là 5–10 phút/lần, chiếm 44.4%; nặng nhất là > 20 phút không tìm ra)** và **77.8% phải tìm lại từ 3 đến > 5 lần chỉ trong vài ngày đầu khóa học**, dẫn tới **55.6% từng bị làm trùng, làm sai hoặc trễ việc**.
+2. **Bổ sung trường thông tin bị thất lạc nhiều nhất từ `Q4` ("Link tài liệu, file" — 77.8%):** Trước kiểm chứng, nhóm chỉ tập trung vào *Quyết định + Người làm + Deadline*. Dữ liệu thật ở `Q4` cho thấy **88.9% cần tìm Deadline**, **77.8% cần tìm Ai phụ trách**, **77.8% cần tìm Quyết định đã chốt**, và đặc biệt **77.8% (7/9 học viên) cần tìm lại "Link tài liệu, file"** (link repo GitHub, Google Sheets, tài liệu bài tập). Vì vậy, đầu ra của giải pháp bắt buộc phải trích xuất đủ **4 trường: (1) Quyết định đã chốt, (2) Đầu việc & Người phụ trách, (3) Deadline/mốc thời gian, (4) Link tài liệu/file đính kèm**.
+3. **Chuyển trọng tâm từ "thay thế Pin/Bảng phân công" sang "chống quên cập nhật" (`Q8, Q9`):** Vì **88.9% học viên đã biết dùng Pin** và **55.6% đã có Bảng phân công**, nhưng **55.6% thất bại vì `"Còn dùng nhưng hay quên cập nhật"`** (kể cả `HV09` khi dùng Bot tự động), quy trình mới ở CP5 không bắt nhóm lập thêm bảng phức tạp mà phải **hỗ trợ gom nhanh đoạn chat cuối buổi thảo luận thành bản chốt 4 mục chuẩn hóa trong < 2 phút** để người phụ trách duyệt và ghim ngay.
 
 ---
 
@@ -204,53 +206,65 @@ Ghi chú chấm:
 ### 4.1. Quy trình hiện tại
 
 Sơ đồ (ASCII, Mermaid hoặc link ảnh trong `report/assets/`):
-
+**Sơ đồ quy trình hiện tại:**
 ```text
+HIỆN TẠI — 8 bước, chưa có tổng thời gian đo đầy đủ, 8/8 bước thủ công
 
+[1 Phát sinh nhu cầu tìm lại thông tin]
+→ [2 Mở Zalo / Discord / Messenger]
+→ [3 Tìm từ khóa hoặc cuộn lịch sử chat]
+→ [4 Đọc nhiều tin nhắn để tìm đoạn thảo luận liên quan] ← BOTTLENECK
+→ [5 Phân biệt ý kiến đang bàn và quyết định đã chốt]
+→ [6 Đối chiếu tin ghim / biên bản / bảng phân công]
+→ [7 Hỏi lại thành viên nếu thông tin thiếu hoặc mâu thuẫn]
+→ [8 Xác nhận quyết định + người phụ trách + deadline + link tài liệu]
 ```
-
-| Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
-|---:|---|---|---|---|---|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-
-**Bottleneck chính:**
 
 ### 4.2. Quy trình tương lai
 
 Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người**, **boundary** ở đâu, **phương án quay về** khi AI sai.
 
 ```text
-
+[1 Copy đoạn chat / ghi chú cần chốt: 1']
+→ [2 Đưa nội dung vào Prompt chuẩn / NotebookLM: 0.5']
+→ [3 Trích xuất 4 trường thông tin + dẫn chứng nguồn: 0.5'] ← AI
+→ [4 Người phụ trách kiểm tra và sửa bản nháp: tối đa 2']
+→ [5 Xác nhận và đăng bản chốt lên tin ghim / bảng chung: 1'] ← CON NGƯỜI
+→ [6 Thành viên tra cứu bản chốt khi cần]
 ```
+BOUNDARY:
+AI chỉ trích xuất bản nháp từ nội dung được cung cấp; không tự kết luận ý kiến là quyết định đã chốt, không tự gán người phụ trách/deadline, không tự đăng bản chốt. Thông tin chưa rõ phải ghi "Chưa xác định" hoặc "Cần xác nhận". Người phụ trách kiểm tra và xác nhận trước khi sử dụng.
+
+PHƯƠNG ÁN QUAY VỀ:
+Nếu AI tóm tắt sai, thiếu dẫn chứng hoặc nhầm quyết định → bỏ bản nháp, đối chiếu chat gốc và lập bản chốt thủ công theo template 4 trường. Nếu công cụ AI không hoạt động → tiếp tục dùng tin ghim, biên bản và bảng phân công như quy trình hiện tại.
+
+**Ghi chú về thời gian:** CP4 đo thời gian tìm kiếm ở lần gần nhất, chưa đo tổng thời gian của toàn bộ quy trình. Mức 4–5 phút ở quy trình tương lai là ước tính thiết kế ban đầu (copy, nhập liệu, AI xử lý, kiểm tra và đăng bản chốt), cần bấm giờ trong pilot để xác nhận.
 
 ### 4.3. Before / after
 
 | Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
 |---|---:|---:|---|
-| Số bước | | | |
-| Tổng thời gian | | | |
-| Số bước thủ công | | | |
-| Bottleneck chính | | | |
-| Rủi ro mới phát sinh | | | |
+| Số bước | 8 | 6 | Gộp thao tác tìm kiếm và đối chiếu thành workflow chuẩn hóa. |
+| Tổng thời gian | Phổ biến 5–10 phút/lần tìm kiếm; có trường hợp trên 20 phút | Khoảng 4–5 phút | Target ban đầu; cần đo thực tế trong pilot. |
+| Bước thủ công | 8/8 | 3/6 | Copy đoạn chat, kiểm tra bản nháp, xác nhận và đăng bản chốt. |
+| Bottleneck | Đọc dò nhiều tin nhắn, phân biệt ý kiến và quyết định cuối cùng | Người phụ trách kiểm tra và xác nhận bản nháp | Bottleneck chuyển sang bước kiểm soát chất lượng, chấp nhận được để tránh AI chốt sai. |
+| Rủi ro mới | Thất lạc thông tin, quên cập nhật, dùng nhầm thông tin cũ | AI trích xuất sai, thiếu ngữ cảnh hoặc bản chốt không được cập nhật | Xử lý bằng dẫn chứng nguồn, boundary và Human-in-the-loop. |
 
+Số bước thủ công 3/6 tính theo các thao tác con người trực tiếp thực hiện trong workflow: copy dữ liệu, kiểm tra bản nháp, xác nhận/đăng bản chốt. Bước tra cứu ở cuối là thao tác sử dụng kết quả, không tính vào thời gian tạo bản chốt.
 ---
 
 ## 5. Problem Statement v0 (CP5)
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | |
+| **Actor** | Thành viên nhóm học tập/dự án khoảng 2–6 người, thường xuyên trao đổi công việc qua Zalo, Discord, Messenger hoặc Slack/Teams. |
+| **Quy trình** | Khi cần tìm lại thông tin, thành viên mở ứng dụng chat, tìm từ khóa/cuộn lịch sử, đọc lại thảo luận, phân biệt ý kiến và quyết định đã chốt, đối chiếu tin ghim/biên bản/bảng phân công và hỏi lại nếu cần. |
+| **Bottleneck** | Đọc dò nhiều tin nhắn để xác định quyết định cuối cùng và đối chiếu 4 trường thông tin: quyết định, người phụ trách, deadline, link tài liệu. Thông tin thường phân tán và các cách lưu hiện tại dễ bị quên cập nhật. |
+| **Impact** | 7/9 học viên (77,8%) phải tìm/hỏi lại từ 3 đến trên 5 lần trong những ngày đầu khóa; 6/9 (66,7%) mất từ 5 phút trở lên ở lần tìm gần nhất; 5/9 (55,6%) từng gặp tình trạng làm trùng, làm sai hoặc trễ việc trong tháng qua. |
+| **Success Metric** | Giảm thời gian tìm lại bản chốt từ mức phổ biến 5–10 phút/lần xuống mục tiêu dưới 2 phút; thời gian tạo và xác nhận bản chốt mới mục tiêu khoảng 4–5 phút. Đo bằng cách bấm giờ trong pilot 2 tuần, đồng thời theo dõi độ chính xác của 4 trường thông tin và số lần phải hỏi lại. |
+| **Boundary** | AI chỉ trích xuất bản nháp từ đoạn chat được cung cấp, phải có dẫn chứng nguồn; không tự kết luận quyết định, không tự gán người phụ trách/deadline, không tự đăng. Người phụ trách phải kiểm tra và xác nhận trước khi ghim/lưu. |
 
-Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng ý không:
+**Phản biện nhận được / câu hỏi nhóm cần tự kiểm tra:** Quy trình mới có thực sự tiết kiệm thời gian không, hay lại tạo thêm thao tác copy/paste và kiểm tra bản nháp? Nhóm đồng ý đây là rủi ro cần kiểm chứng. Vì vậy, ngoài metric thời gian tìm kiếm, nhóm bổ sung metric **thời gian tạo bản chốt, độ chính xác của 4 trường thông tin và tỷ lệ bản nháp được người phụ trách xác nhận mà không cần sửa lớn**. Nếu workflow nhanh hơn nhưng thường xuyên trích xuất sai hoặc bị bỏ quên cập nhật thì chưa thể xem là giải pháp thành công.
 
 -
 
