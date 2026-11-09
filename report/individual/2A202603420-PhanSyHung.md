@@ -149,11 +149,11 @@ Card #1 ban đầu là problem #2 (đề bài/hướng dẫn thay đổi sau khi
 | Nhận phản biện | Câu hỏi tôi nhận được: [cần điền] | Tôi đã sửa gì: [cần điền] |
 | Gom cluster / cây OST | Người chính CP3: tổng hợp 12 candidate của 4 thành viên vào bảng pitch, gom 4 cluster (A–D), dựng cây OST 1 outcome – 4 opportunity, gạch bỏ 6 ý là solution đội lốt opportunity | `group_report.md` mục 2.1–2.3 |
 | Chọn candidate problem | Chấm điểm shortlist 3 candidate (A, B, #7); chỉ ra #7 có điểm cao nhất (33) nhưng trùng hướng với bài mẫu "báo cáo tuần", đề xuất A; ghi lý do chọn/loại | Nhóm thống nhất chọn **A — quyết định & trạng thái việc nhóm thất lạc trong chat**; ghi vào `group_report.md` mục 1, 2.4 và `TEAM.md` |
-| Kiểm chứng / research | Soạn bộ 11 câu hỏi khảo sát theo The Mom Test (`report/assets/cp4-survey-form.md`), script tạo Google Form có skip logic, và template interview snapshot (`report/assets/cp4-interview-snapshot-template.md`) | Bộ câu hỏi Q1–Q11 được nhóm dùng để thu 9 phản hồi thật (mục 3.2); Hoàng là người chính chạy kiểm chứng và research |
-| Quy trình nhóm | [cần điền nếu có tham gia] | |
-| Problem Statement | [cần điền nếu có tham gia] | |
-| Mức can thiệp AI | [cần điền nếu có tham gia] | |
-| Quyết định | [cần điền nếu có tham gia] | |
+| Kiểm chứng / research | Vai trò người hướng dẫn/điều phối: tạo survey (Google Form), soạn bộ 11 câu hỏi Q1–Q11 theo The Mom Test và các case dùng để kiểm chứng (`report/assets/cp4-survey-form.md`, `report/assets/cp4-interview-snapshot-template.md`); gợi ý cho nhóm các hướng giải pháp đã có để research | Survey thu 9 phản hồi thật làm bằng chứng cho mục 3.2; các gợi ý giải pháp có sẵn được nhóm kiểm tra và đưa vào bảng research mục 3.3 |
+| Quy trình nhóm | Tổ chức buổi họp nhóm để cùng xác định quy trình hiện tại và quy trình tương lai cho giải pháp | Nhóm thống nhất quy trình trước/sau, bảng before/after (mục 4) |
+| Problem Statement | Tổ chức buổi họp nhóm để thống nhất Problem Statement | Problem Statement v0 (mục 5) |
+| Mức can thiệp AI | Tham gia thảo luận chọn mức can thiệp No AI / Rule / Workflow / Agent | Mục 6 |
+| Quyết định | Tham gia thảo luận 4 rủi ro và quyết định Go / Not Yet / No-Go | Mục 8 |
 
 ---
 
@@ -161,14 +161,15 @@ Card #1 ban đầu là problem #2 (đề bài/hướng dẫn thay đổi sau khi
 
 | Checkpoint | Tôi dùng AI để làm gì? | AI hữu ích ở đâu? | AI sai hoặc hời hợt ở đâu? | Tôi sửa gì bằng nhận định của mình? |
 |---|---|---|---|---|
-| CP1 Scan | Claude quét repo, gợi ý thêm problem theo 4 lăng kính, đếm commit sửa đề và số từ tài liệu | Lấy được bằng chứng đo được từ `git log` và `wc -w` thay vì cảm giác | AI không biết số phút/tần suất thật của tôi — phần dấu hiệu cá nhân AI để trống, không bịa được | [cần điền: tự bổ sung số liệu thật, bỏ ý nào] |
+| CP1 Scan | Claude quét repo, gợi ý thêm problem theo 4 lăng kính, đếm commit sửa đề và số từ tài liệu | Lấy được bằng chứng đo được từ `git log` và `wc -w` thay vì cảm giác | AI không biết số phút/tần suất thật của tôi — phần dấu hiệu cá nhân AI để trống; khi tôi nhờ điền số "theo hành vi sinh viên thông thường", AI từ chối vì đó là số bịa, không phải bằng chứng của tôi | Tự bổ sung số liệu theo trải nghiệm thật; [cần điền: dòng nào bỏ vì không có số đo] |
 | CP2 Problem Card | Claude nháp 3 card + quy trình; đề xuất problem thay thế khi tôi bác card "đề thay đổi" | Gợi ý card "điền bảng Dùng AI" có bottleneck đo được và phương án No AI rõ | Ban đầu AI chọn card "đề thay đổi" vì có nhiều commit, nhưng không phân biệt commit trước buổi lab với thay đổi trong buổi lab — tôi phải tự chỉ ra; một số bước quy trình là AI suy luận | Đổi Card #1 sang problem #8; [cần điền: bước quy trình nào tôi sửa lại theo cách mình thực sự làm] |
-| CP3 Hội tụ (tổng hợp, không dùng cho pitch/phản biện) | Claude đọc 4 báo cáo cá nhân, nháp bảng pitch, cluster, cây OST và bảng chấm điểm để nhóm thảo luận | Gom nhanh 12 card, phát hiện ý "solution đội lốt opportunity" trong card; chỉ ra candidate #7 trùng hướng bài mẫu | AI chấm điểm dựa trên văn bản báo cáo, không biết nội dung thảo luận thật; ban đầu AI nháp cả lý do chọn/loại thay nhóm | Câu hỏi phản biện và quyết định chọn A do nhóm tự đưa ra trong buổi; [cần điền: điểm/lý do nào nhóm đã sửa so với nháp] |
-| CP4 Kiểm chứng (soạn công cụ) | Claude soạn bộ 11 câu hỏi khảo sát, template interview snapshot và script Google Apps Script tạo form | Câu hỏi bám hành vi đã xảy ra (7 ngày qua), có skip logic, có câu bắt tín hiệu phản bác (Q9) | Câu Q10 (mức phiền 1–5) vẫn là ý kiến, không phải hành vi; script chưa được AI chạy thử | [cần điền: tôi đã sửa câu hỏi nào trước khi gửi, ví dụ đổi "7 ngày qua" thành "những ngày đầu khóa"] |
-| CP4 Research | | | | |
-| CP5 Quy trình | | | | |
-| CP5–6 Problem Statement | | | | |
-| CP6 Mức can thiệp / quyết định | | | | |
+| CP3 Hội tụ (tổng hợp, không dùng cho pitch/phản biện) | Claude đọc 4 báo cáo cá nhân, nháp bảng pitch, cluster, cây OST và bảng chấm điểm để nhóm thảo luận | Gom nhanh 12 card, phát hiện ý "solution đội lốt opportunity" trong card; chỉ ra candidate #7 trùng hướng bài mẫu | AI chấm điểm dựa trên văn bản báo cáo, không biết nội dung thảo luận thật; ban đầu AI nháp cả lý do chọn/loại thay nhóm | Câu hỏi phản biện và quyết định chọn A do nhóm tự đưa ra trong buổi. AI tự ghi một thành viên là "người hỗ trợ CP3" trong `TEAM.md` chỉ dựa trên phần tự khai của bạn đó — tôi xóa vì chưa xác nhận với nhóm |
+| CP4 Kiểm chứng (soạn công cụ) | Claude soạn bộ 11 câu hỏi khảo sát, template interview snapshot và script Google Apps Script tạo form | Câu hỏi bám hành vi đã xảy ra (7 ngày qua), có skip logic, có câu bắt tín hiệu phản bác (Q9) | Câu Q10 (mức phiền 1–5) vẫn là ý kiến, không phải hành vi; script chưa được AI chạy thử | Mốc thời gian Q3 "7 ngày qua" không khớp với lớp mới bắt đầu khóa → form thực tế đổi thành "những ngày đầu Khóa AI thực chiến"; tự tạo Google Form và gửi cho học viên ngoài nhóm (9 phản hồi) |
+| CP4 Research | [cần điền: có dùng AI để tìm gợi ý giải pháp có sẵn không? Nếu không: "Không dùng AI — tự gợi ý từ trải nghiệm"] | | | |
+| CP5 Quy trình | [cần điền: có dùng AI không? Nếu không: "Không dùng AI"] | | | |
+| CP5–6 Problem Statement | [cần điền: có dùng AI phản biện Problem Statement v0 không?] | | | |
+| CP6 Mức can thiệp / quyết định | [cần điền: có dùng AI không?] | | | |
+| Viết báo cáo (mục 4 cá nhân, `TEAM.md`, điền bảng nhóm) | Claude điền nháp mục 4, phần cá nhân trong `TEAM.md`, dán câu hỏi phản biện vào bảng pitch | Tiết kiệm thời gian định dạng bảng, giữ thống nhất giữa báo cáo cá nhân, `TEAM.md` và `group_report.md` | AI không biết tôi đã làm gì ngoài những gì có trong file — phải tự kể lại vai trò (tạo survey, tổ chức họp chốt quy trình và Problem Statement) | Tự kiểm tra từng dòng mục 4 và sửa theo đóng góp thật; mục 6 Reflection tự viết, không dùng AI |
 
 ---
 
