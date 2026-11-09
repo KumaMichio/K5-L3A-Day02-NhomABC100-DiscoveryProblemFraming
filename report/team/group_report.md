@@ -274,38 +274,67 @@ Số bước thủ công 3/6 tính theo các thao tác con người trực tiế
 
 ### 6.1. Ma trận độ mơ hồ × độ phức tạp
 
-Bài của nhóm nằm ở ô:
+**Bài của nhóm nằm ở ô:** Độ mơ hồ cao × Độ phức tạp thấp đến trung bình.
 
-Vì sao:
+**Vì sao:**
+
+Vấn đề của nhóm là tìm lại những quyết định đã chốt, người phụ trách, deadline và trạng thái công việc trong các đoạn chat Zalo/Discord dài.
+
+- **Độ mơ hồ cao:** Các thành viên thường trao đổi bằng ngôn ngữ tự nhiên, sử dụng từ viết tắt hoặc thay đổi ý kiến trong quá trình thảo luận. Ví dụ, câu "bạn làm phần 4 nhé" có thể bị hiểu nhầm giữa CP4 và Mục 4 trong báo cáo. AI cũng có thể nhầm câu hỏi hoặc đề xuất thành quyết định cuối cùng.
+- **Độ phức tạp thấp đến trung bình:** Quy trình xử lý tương đối cố định, gồm lấy đoạn chat, trích xuất thông tin, kiểm tra, xác nhận và lưu lại kết quả. Không cần AI tự lập kế hoạch hoặc thực hiện nhiều hành động phức tạp.
+
+Vì vậy, nhóm có thể sử dụng AI để xử lý phần ngôn ngữ khó xác định bằng quy tắc cố định, nhưng vẫn cần con người kiểm tra trước khi sử dụng kết quả.
 
 ### 6.2. So sánh 4 mức
 
 | Mức | Phương án cho bài của nhóm | Đủ khi nào | Rủi ro | Chọn? |
 |---|---|---|---|---|
-| **No AI** (sửa quy trình) | | | | |
-| **Rule** | | | | |
-| **Workflow** | | | | |
-| **Agent** | | | | |
+| **No AI** (sửa quy trình) | Thống nhất 5 phút cuối mỗi buổi họp, ghi quyết định, người phụ trách và deadline trực tiếp vào `TEAM.md`; ghim thông báo quan trọng. | Nhóm ít trao đổi qua chat, dưới 20 tin nhắn/ngày, thường xuyên làm việc trực tiếp. | Thành viên quên cập nhật hoặc thông tin ghim không còn mới khi có thay đổi. | Không chọn làm phương án chính; giữ làm phương án dự phòng. |
+| **Rule** | Sử dụng nhãn `[CHỐT]`, `[TASK]`, `[KẸT]` và biểu mẫu cố định; có thể dùng script để lọc tin nhắn đã gắn nhãn. | Các thành viên tuân thủ quy ước và thông tin đã được ghi rõ ràng. | Không hiểu được ngữ cảnh, khó xử lý tin nhắn thiếu nhãn hoặc quyết định bị thay đổi. | Không chọn làm mức chính; kết hợp vào Workflow. |
+| **Workflow** | Người dùng copy đoạn chat → AI trích xuất quyết định, task, owner, deadline, blocker và câu dẫn chứng → người phụ trách kiểm tra → cập nhật file chung và ghim bản chốt. | Nhóm trao đổi trực tuyến nhiều, có các đoạn thảo luận dài và cần tổng hợp thông tin từ nhiều tin nhắn. | AI có thể tóm tắt sai, bỏ sót thông tin hoặc gán nhầm việc; cần kiểm tra thủ công. | **Chọn để pilot.** |
+| **Agent** | AI tự theo dõi Zalo/Discord, phát hiện quyết định, cập nhật task và gửi nhắc việc tự động. | Có quyền truy cập dữ liệu, API phù hợp, sự đồng ý của thành viên và nhu cầu tự động hóa liên tục. | Khó lấy dữ liệu từ Zalo, phụ thuộc quyền Admin Discord, rủi ro quyền riêng tư và tự hành động sai. | Không chọn. |
 
-**Mức chọn:**
+**Mức chọn:** Workflow bán tự động, kết hợp Rule và Human-in-the-loop (HITL).
 
 **Vì sao không chọn mức đơn giản hơn:**
+
+Qua kiểm chứng, 7/8 học viên được hỏi cho biết thường mất 8–15 phút để tìm lại quyết định hoặc phân công công việc trong nhóm chat. Với những cuộc thảo luận dài, chức năng tìm kiếm từ khóa hoặc ghim tin nhắn chưa giải quyết hoàn toàn vấn đề vì một quyết định có thể bị thay đổi sau nhiều lượt trao đổi.
+
+Rule có thể hỗ trợ chuẩn hóa cách ghi thông tin nhưng không đủ khả năng phân biệt ngữ cảnh phức tạp nếu thành viên không ghi đúng quy ước. Workflow phù hợp hơn vì AI có thể hỗ trợ đọc hiểu và trích xuất nội dung, trong khi con người vẫn kiểm soát quyết định cuối cùng.
+
+Tuy nhiên, với nhóm ít tin nhắn và đã cập nhật công việc trực tiếp vào file chung, No AI vẫn là phương án phù hợp và không cần triển khai AI.
 
 ### 6.3. AI Canvas rút gọn
 
 | Thành phần | Nội dung |
 |---|---|
-| **Prediction** — AI dự đoán / tạo ra gì? | |
-| **Judgment** — con người cân nhắc, quyết định gì? | |
-| **Action** — hành động cuối cùng là gì, ai làm? | |
-| **Outcome** — đo kết quả bằng gì? | |
-| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | |
-| **Feedback** — lấy phản hồi ở đâu để cải thiện? | |
+| **Prediction** — AI dự đoán / tạo ra gì? | AI trích xuất bản tóm tắt có cấu trúc gồm quyết định đã chốt, task, người phụ trách, deadline, trạng thái file và blocker. Mỗi thông tin phải kèm câu chat gốc làm bằng chứng; nội dung chưa rõ được đánh dấu "Cần xác nhận". |
+| **Judgment** — con người cân nhắc, quyết định gì? | Nhóm trưởng hoặc người ghi chép đối chiếu kết quả với tin nhắn gốc, xác định đâu là quyết định cuối cùng và kiểm tra việc phân công có chính xác hay không. |
+| **Action** — hành động cuối cùng là gì, ai làm? | Người được phân công kiểm tra, chỉnh sửa và xác nhận bản tóm tắt, sau đó cập nhật `TEAM.md` hoặc bảng công việc và ghim thông báo lên nhóm chat. AI không tự đăng hoặc thay đổi phân công. |
+| **Outcome** — đo kết quả bằng gì? | Thời gian tìm lại quyết định từ 8–15 phút xuống dưới 2 phút/lần; giảm số lần hỏi lại; không có trường hợp gán nhầm người phụ trách; hạn chế bỏ sót quyết định và blocker quan trọng. |
+| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | Đoạn chat Zalo/Discord được thành viên sao chép hoặc xuất thủ công, tốt nhất có người gửi, thời gian và nội dung đầy đủ. Dữ liệu có sẵn trong nhóm nhưng cần kiểm tra tính đầy đủ và quyền chia sẻ trước khi đưa vào AI. |
+| **Feedback** — lấy phản hồi ở đâu để cải thiện? | Lấy từ người duyệt và các thành viên sử dụng bản tóm tắt: thông tin nào đúng, sai, bị bỏ sót, mất bao lâu để kiểm tra và có phải hỏi lại hay không. Ghi lỗi để điều chỉnh prompt và quy tắc xử lý. |
 
 ### 6.4. Hai câu hỏi của Google PAIR
 
-- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? Bằng chứng:
-- AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Vì sao, và thiết kế đã xử lý thế nào:
+**Người dùng muốn được hỗ trợ (augment) hay giao hẳn việc (automate)? Bằng chứng:**
+
+Nhóm lựa chọn **augment**, tức AI hỗ trợ tổng hợp thông tin chứ không thay thế hoàn toàn con người.
+
+Bằng chứng là trong quá trình phỏng vấn, học viên HV05 đã thử dùng ChatGPT tóm tắt đoạn chat nhưng AI gán nhầm công việc cho một thành viên chỉ đang đặt câu hỏi. Người dùng vẫn cần đối chiếu với tin nhắn gốc trước khi xác nhận bản tóm tắt.
+
+Vì vậy, AI chỉ tạo bản nháp, còn quyền quyết định, phân công và công bố thông tin thuộc về nhóm trưởng hoặc người được giao nhiệm vụ.
+
+**AI sai kiểu nào tệ hơn, báo nhầm hay bỏ sót? Vì sao, và thiết kế đã xử lý thế nào:**
+
+Trong bài toán này, **báo nhầm quyết định hoặc gán nhầm người phụ trách là lỗi đặc biệt nghiêm trọng** vì có thể khiến thành viên làm sai việc, làm trùng hoặc bỏ lỡ deadline. Tuy nhiên, bỏ sót blocker quan trọng cũng có thể làm chậm tiến độ nhóm.
+
+Để hạn chế hai loại lỗi, nhóm đề xuất:
+
+1. Mọi quyết định và phân công do AI trích xuất phải có dẫn chứng từ chat gốc.
+2. Không tự suy diễn người phụ trách hoặc deadline khi chưa có thông tin rõ ràng.
+3. Những trường hợp chưa chắc chắn phải được đánh dấu "Cần xác nhận".
+4. Người phụ trách kiểm tra bản tóm tắt, đặc biệt là quyết định, phân công và blocker, trước khi ghim lên nhóm.
 
 ---
 
@@ -313,29 +342,37 @@ Vì sao:
 
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** | |
-| **AI intervention point** | |
-| **Mức chọn** | No AI / Rule / Workflow / Agent |
-| **Rủi ro & người kiểm tra** | |
+| **Actor** | Thành viên hoặc nhóm trưởng của nhóm học tập/dự án khoảng 4 người, thường xuyên trao đổi công việc trực tuyến qua Zalo/Discord và làm việc trên GitHub chung, với các buổi thảo luận có trên 50 tin nhắn. |
+| **Quy trình** | 1. Mở Zalo/Discord → 2. Tìm đoạn chat liên quan → 3. Cuộn và đọc lại các tin nhắn → 4. Xác định quyết định cuối cùng, task, owner, deadline và blocker → 5. Hỏi lại nếu chưa rõ → 6. Ghi vào file chung. |
+| **Bottleneck** | Bước 3–4: phải đọc nhiều tin nhắn để phân biệt ý kiến đang thảo luận với quyết định đã chốt và xác định chính xác người phụ trách. Hiện mất khoảng 8–15 phút/lần. |
+| **Impact** | Mất thời gian tìm kiếm lặp lại 3–5 lần/tuần theo khảo sát; có thể dẫn đến hỏi lại nhiều lần, làm trùng việc, hiểu nhầm CP4 với Mục 4 hoặc bỏ sót thông báo cập nhật file và blocker. |
+| **Success Metric** (baseline → target, cách đo) | (1) Thời gian tìm thông tin: 8–15 phút → dưới 2 phút/lần, bấm giờ từ khi bắt đầu tra cứu đến khi tìm được câu trả lời đúng. (2) Số lần gán nhầm người phụ trách: mục tiêu 0 trong pilot. (3) Tỷ lệ trích xuất đúng và đủ quyết định quan trọng: mục tiêu ≥ 90%, đối chiếu với bản chốt do nhóm xác nhận. (4) 100% thông tin được công bố phải có nguồn kiểm tra. Các target là mục tiêu đề xuất, chưa phải kết quả đã đạt. |
+| **Boundary** | AI không tự quyết định, không tự phân công hoặc thay đổi deadline, không được suy diễn khi thiếu bằng chứng, không tự đăng bản chốt. Chỉ xử lý nội dung được phép chia sẻ và phải có người duyệt trước khi sử dụng. |
+| **AI intervention point** | Sau khi người dùng lấy đoạn chat và trước khi lập bảng tổng hợp. AI hỗ trợ đọc hiểu, phân loại và trích xuất thông tin theo mẫu cố định, kèm dẫn chứng. |
+| **Mức chọn** | **Workflow bán tự động (Rule + AI + HITL).** |
+| **Rủi ro & người kiểm tra** | Rủi ro chính là AI hiểu sai ngữ cảnh, gán nhầm việc, bỏ sót blocker hoặc xử lý dữ liệu chưa được phép chia sẻ. Nhóm trưởng hoặc người ghi chép chịu trách nhiệm kiểm tra từng quyết định và phân công trước khi công bố. |
 
 **Thay đổi so với v0 và lý do:**
 
-| Trường | v0 | v1 | Vì sao đổi |
+*Lưu ý: Phần Problem Statement v0 trong file nhóm hiện chưa được điền. Bảng dưới đây dùng nội dung candidate ban đầu ở CP3 làm mốc so sánh với v1, không phải một bản v0 đã hoàn thành.*
+
+| Trường | v0 (ý tưởng ban đầu) | v1 | Vì sao đổi |
 |---|---|---|---|
-| | | | |
+| **Actor** | Các thành viên nhóm học tập/dự án nói chung. | Nhóm khoảng 4 người, trao đổi trực tuyến nhiều, trên 50 tin nhắn/buổi. | HV04 cho thấy nhóm làm trực tiếp và ít chat có thể giải quyết bằng No AI. |
+| **Bottleneck** | Mất thời gian tìm lại tin nhắn cũ. | Khó phân biệt quyết định cuối cùng với ý kiến đang bàn; khó xác định task, owner, deadline. | Phỏng vấn cho thấy tìm kiếm từ khóa không giải quyết được vấn đề ngữ cảnh. |
+| **Output** | Tóm tắt những thông tin quan trọng trong chat. | Bảng quyết định, task, owner, deadline, blocker và trạng thái file, kèm nguồn gốc. | Tránh hiểu nhầm phân công, bỏ sót trạng thái công việc. |
+| **Success Metric** | Giảm thời gian tìm kiếm từ 8–15 phút xuống dưới 2 phút. | Giữ metric thời gian, bổ sung độ chính xác, tính đầy đủ và dẫn chứng nguồn. | Tìm nhanh nhưng sai vẫn gây ảnh hưởng tới công việc nhóm. |
+| **Boundary** | Chưa xác định đầy đủ. | Không tự gán việc, không tự công bố và bắt buộc người duyệt kiểm tra. | HV05 ghi nhận trường hợp AI nhầm câu hỏi thành phân công công việc. |
 
 **Tiêu chí đánh giá đầu ra của AI (3–5 tiêu chí):**
 
 | # | Tiêu chí | Đạt khi | Không đạt khi |
 |---:|---|---|---|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
+| 1 | **Đúng quyết định cuối cùng** | Trích xuất đúng quyết định đã được nhóm xác nhận, không lấy ý kiến cũ đã bị thay đổi. | Nhầm đề xuất, câu hỏi hoặc quyết định đã hủy thành quyết định cuối cùng. |
+| 2 | **Đúng người và đầu việc** | Task, mã CP, số Mục, owner và deadline khớp bằng chứng; trường chưa rõ ghi "Cần xác nhận". | Tự gán người, tự đặt deadline hoặc nhầm CP4 với Mục 4. |
+| 3 | **Đầy đủ thông tin quan trọng** | Trích xuất được ≥ 90% quyết định/task cần có và không bỏ sót blocker quan trọng trong bộ kiểm thử. | Bỏ sót blocker quan trọng hoặc tỷ lệ bao phủ dưới 90%. |
+| 4 | **Có thể kiểm chứng** | 100% quyết định và phân công trong bản công bố có trích dẫn chính xác từ dữ liệu chat gốc. | Dẫn chứng thiếu, sai hoặc không tìm thấy trong nguồn. |
+| 5 | **Hiệu quả thời gian** | Thời gian tra cứu bản đã được xác nhận dưới 2 phút; thời gian người duyệt kiểm tra bản nháp mục tiêu ≤ 2 phút/đoạn. | Tra cứu vẫn mất từ 2 phút trở lên hoặc phải kiểm tra lại quá lâu khiến Workflow không hiệu quả hơn No AI/Rule. |
 
 ---
 
@@ -345,31 +382,127 @@ Vì sao:
 
 | Rủi ro | Câu hỏi | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
 |---|---|---|---|
-| **Value** | Người dùng có thật sự cần và sẽ dùng không? | | |
-| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | | |
-| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | | |
-| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | | |
+| **Value** | Người dùng có thật sự cần và sẽ dùng không? | **Thấp** | 7/8 học viên được khảo sát gặp vấn đề, mất 8–15 phút/lần; tuy nhiên mẫu mới có 8 người và một trường hợp cho thấy No AI là đủ. |
+| **Usability** | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | **TB** | Copy đoạn chat và sử dụng prompt tương đối đơn giản, nhưng AI từng gán nhầm việc. Cần nguồn trích dẫn và người kiểm tra trước khi sử dụng. |
+| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không? | **TB** | Có thể dùng đoạn chat copy thủ công và công cụ AI sẵn có, không cần tự xây bot. Tuy nhiên cần kiểm tra khả năng lấy dữ liệu đầy đủ, thời gian xử lý và chất lượng trích xuất. |
+| **Viability** | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành? | **TB** | Có thể thử nghiệm với công cụ miễn phí hoặc sẵn có. Rủi ro chính là quyền riêng tư và việc đưa dữ liệu chat lên công cụ bên ngoài. Nhóm trưởng quản lý quy trình, người ghi chép vận hành; cần sự đồng ý của các thành viên và loại bỏ thông tin nhạy cảm. |
 
 ### 8.2. Kết luận
 
-**Quyết định:** Go / Not Yet / No-Go
+**Quyết định đề xuất: Go — thực hiện pilot nhỏ có kiểm soát, chưa triển khai tự động toàn bộ.**
 
 **Lý do:**
 
+Nhóm đã có bằng chứng cho thấy vấn đề xảy ra thực tế, ảnh hưởng đến nhiều người và có thể đo lường bằng thời gian tìm lại thông tin. Phương án Workflow bán tự động phù hợp vì có thể sử dụng những công cụ sẵn có, không cần phát triển hệ thống phức tạp hoặc xin quyền Admin để tích hợp bot.
+
+Tuy nhiên, AI chưa được kiểm chứng đầy đủ về độ chính xác và hiệu quả so với No AI/Rule. Vì vậy, Go ở đây chỉ có nghĩa là đủ cơ sở để thử nghiệm nhỏ, không phải triển khai chính thức.
+
 **Nếu Go — pilot nhỏ nhất:**
+
+Thử nghiệm trên nhóm ABC100 với 3 đoạn hội thoại Zalo/Discord đã được phép sử dụng, mỗi đoạn có trên 50 tin nhắn và có quyết định hoặc phân công công việc.
+
+Quy trình:
+
+1. Người ghi chép chuẩn bị đoạn chat, loại bỏ dữ liệu nhạy cảm và lập bản đáp án chuẩn bằng cách đối chiếu với các thành viên.
+2. Thử phương án No AI/Rule để có số liệu so sánh trên cùng loại nhiệm vụ.
+3. Đưa đoạn chat vào Workflow sử dụng prompt chuẩn, yêu cầu AI trích xuất quyết định, task, owner, deadline và blocker kèm dẫn chứng.
+4. Người ghi chép kiểm tra, chỉnh sửa và ghim bản đã xác nhận.
+5. Cho các thành viên thực hiện các câu hỏi tra cứu thực tế, bấm giờ, đếm lỗi và so sánh kết quả hai phương án.
+
+**Mục tiêu pilot:** Thời gian tìm thông tin dưới 2 phút/lần, không có trường hợp gán nhầm owner, không bỏ sót blocker quan trọng và đạt ít nhất 90% thông tin cần trích xuất chính xác, đầy đủ.
 
 **Nếu Not Yet — cần kiểm chứng gì trước:**
 
+Nếu pilot chưa đáp ứng các tiêu chí, nhóm cần kiểm tra thêm khả năng cung cấp dữ liệu chat, mức độ chính xác khi phân biệt quyết định với đề xuất, thời gian duyệt của con người và hiệu quả thực tế so với quy trình No AI/Rule.
+
 **Nếu No-Go — nên làm gì thay AI:**
 
-**Ngưỡng dừng** (nếu sau … mà … thì quay về …):
+Áp dụng một bảng phân công thống nhất trong `TEAM.md`, sử dụng quy ước `[CHỐT]`, `[TASK]`, `[KẸT]`, dành 5 phút cuối buổi họp để xác nhận quyết định và ghim thông báo đã chốt. Chỉ định một người chịu trách nhiệm cập nhật khi có thay đổi.
+
+**Ngưỡng dừng:**
+
+Sau 3 đoạn hội thoại pilot, nếu xuất hiện bất kỳ trường hợp AI gán nhầm người phụ trách hoặc quyết định sai mà người duyệt không phát hiện, bỏ sót blocker quan trọng, tỷ lệ thông tin đúng và đủ dưới 90%, hoặc thời gian sử dụng không tốt hơn phương án No AI/Rule, nhóm sẽ dừng mở rộng Workflow và quay về quy trình ghi chép thủ công có cấu trúc.
+
+Chỉ tiếp tục triển khai khi kết quả cho thấy tiết kiệm thời gian thực tế và đảm bảo tính chính xác, khả năng kiểm chứng cũng như quyền kiểm soát của con người.
+
+### 8.2. Kết luận
+
+**Quyết định:** **Go — triển khai pilot nhỏ có kiểm soát, chưa triển khai chính thức.**
+
+**Lý do:**
+
+Kết quả kiểm chứng cho thấy 7/8 học viên gặp khó khăn khi tìm lại quyết định và phân công công việc trên Zalo/Discord, thường mất 8–15 phút/lần. Vấn đề xảy ra nhiều lần trong tuần, gây lãng phí thời gian và có nguy cơ làm trùng hoặc bỏ sót công việc.
+
+Nhóm lựa chọn Workflow bán tự động vì có thể tận dụng công cụ AI sẵn có để hỗ trợ tổng hợp thông tin mà không cần xây dựng Agent phức tạp. Tuy nhiên, AI vẫn có khả năng hiểu sai ngữ cảnh hoặc gán nhầm người phụ trách. Vì vậy, cần thử nghiệm nhỏ và có con người kiểm tra trước khi quyết định triển khai rộng hơn.
+
+**Nếu Go — pilot nhỏ nhất:**
+
+Thử nghiệm trên nhóm ABC100 với 3 đoạn hội thoại Zalo/Discord, mỗi đoạn trên 50 tin nhắn và có nội dung quyết định, phân công công việc hoặc blocker.
+
+Quy trình thử nghiệm:
+
+1. Người phụ trách chuẩn bị đoạn chat đã được phép sử dụng và xác nhận các quyết định đúng làm dữ liệu đối chiếu.
+2. Đo thời gian tìm kiếm bằng phương án No AI/Rule.
+3. Sử dụng AI với prompt chuẩn để trích xuất quyết định, task, owner, deadline và blocker kèm dẫn chứng.
+4. Người ghi chép kiểm tra, chỉnh sửa và xác nhận kết quả.
+5. So sánh thời gian và độ chính xác giữa hai phương án.
+
+Mục tiêu: Giảm thời gian tìm kiếm xuống dưới 2 phút/lần, tỷ lệ thông tin đúng và đầy đủ đạt ít nhất 90%, không gán nhầm người phụ trách và không bỏ sót blocker quan trọng.
+
+**Nếu Not Yet — cần kiểm chứng gì trước:**
+
+Cần kiểm tra thêm khả năng lấy dữ liệu chat đầy đủ, mức độ chính xác của AI khi phân biệt quyết định cuối cùng với ý kiến đang thảo luận, thời gian con người cần để kiểm tra kết quả và hiệu quả thực tế so với No AI/Rule. Đồng thời, cần xác nhận sự đồng ý của các thành viên khi sử dụng dữ liệu hội thoại với công cụ AI.
+
+**Nếu No-Go — nên làm gì thay AI:**
+
+Áp dụng quy trình ghi chép thống nhất: sử dụng nhãn `[CHỐT]`, `[TASK]`, `[KẸT]`, dành 5 phút cuối buổi họp để xác nhận phân công, cập nhật trực tiếp vào `TEAM.md` và ghim thông báo quan trọng. Phân công một người chịu trách nhiệm duy trì thông tin mới nhất.
+
+**Ngưỡng dừng:**
+
+Nếu sau 3 đoạn hội thoại thử nghiệm, AI vẫn gán nhầm người phụ trách hoặc quyết định cuối cùng mà người duyệt không phát hiện, bỏ sót blocker quan trọng, tỷ lệ trích xuất đúng và đủ dưới 90%, hoặc tổng thời gian xử lý không tốt hơn No AI/Rule, nhóm sẽ dừng mở rộng Workflow và quay về quy trình ghi chép thủ công có cấu trúc.
 
 ---
 
 ## 9. Hạn chế và hướng tiếp theo
 
--
+**Hạn chế:**
+
+- Mẫu kiểm chứng còn nhỏ, mới gồm 8 học viên thuộc các nhóm trong lớp L3A nên chưa thể đại diện cho tất cả nhóm học tập hoặc dự án.
+- Dữ liệu thời gian chủ yếu dựa trên phỏng vấn, khảo sát và một số lần quan sát thực tế; chưa có thử nghiệm đối chứng đủ lớn để khẳng định mức tiết kiệm thời gian.
+- Không phải nhóm nào cũng cần AI. Nhóm ít thành viên, trao đổi trực tiếp và cập nhật công việc thường xuyên có thể giải quyết tốt bằng No AI.
+- AI có nguy cơ hiểu sai ngữ cảnh, nhầm đề xuất thành quyết định hoặc bỏ sót thông tin. Việc kiểm tra thủ công vẫn cần thiết.
+- Khả năng tích hợp trực tiếp với Zalo/Discord còn hạn chế bởi quyền truy cập, API và yêu cầu bảo vệ dữ liệu hội thoại.
+- Nhóm chưa hoàn thành pilot để đánh giá độ chính xác, chi phí và tính ổn định của Workflow trong sử dụng thực tế.
+
+**Hướng tiếp theo:**
+
+1. Hoàn thiện prompt chuẩn với đầu ra cố định gồm quyết định, task, owner, deadline, blocker và dẫn chứng từ tin nhắn gốc.
+2. Thử nghiệm với 3 đoạn hội thoại thực tế, đồng thời đo thời gian xử lý, số lỗi và tỷ lệ thông tin được trích xuất chính xác.
+3. So sánh Workflow với phương án No AI/Rule để xác định AI có thực sự tạo thêm giá trị hay không.
+4. Thu thập phản hồi từ thành viên, đặc biệt về các trường hợp AI hiểu sai, bỏ sót hoặc cần người kiểm tra quá lâu.
+5. Nếu pilot đạt mục tiêu, mở rộng thử nghiệm sang một số nhóm có tần suất trao đổi trực tuyến cao; nếu không đạt, cải thiện quy trình ghi chép thủ công trước khi cân nhắc ứng dụng AI tiếp.
+
+---
 
 ## 10. Tài liệu tham khảo
 
--
+1. **Báo cáo kiểm chứng CP4 của nhóm ABC100.** Kết quả phỏng vấn và khảo sát 8 học viên về thời gian tìm lại quyết định, phân công công việc trong nhóm chat.  
+   File nội bộ: `report/assets/cp4-survey-and-interviews.md`
+
+2. **Discord Support — Using Search.** Hướng dẫn sử dụng chức năng tìm kiếm và bộ lọc tin nhắn trên Discord.  
+   https://support.discord.com/hc/en-us/articles/115000468588-Using-Search
+
+3. **Discord Support — Pinned Messages.** Hướng dẫn ghim và quản lý tin nhắn quan trọng trong Discord.  
+   https://support.discord.com/hc/en-us/articles/220403608-Pinned-Messages
+
+4. **Slack Help Center — Guide to AI features in Slack.** Tham khảo cách AI tóm tắt hội thoại, tổng hợp thông tin và dẫn về nguồn tin nhắn.  
+   https://slack.com/help/articles/25076892548883-Guide-to-AI-features-in-Slack
+
+5. **n8n Documentation — Discord Node.** Tham khảo khả năng xây dựng quy trình tự động hóa liên quan đến Discord.  
+   https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.discord/
+
+6. **Google — NotebookLM Help.** Tham khảo công cụ hỗ trợ tổng hợp thông tin từ tài liệu nguồn và trích dẫn để kiểm chứng nội dung.  
+   https://support.google.com/notebooklm
+
+7. **Báo cáo nhóm ABC100 — Day 02 Discovery & Problem Framing.** Nguồn tổng hợp kết quả CP3–CP6, Assumption Map, kiểm chứng và so sánh các phương án giải quyết.  
+   File nội bộ: `report/team/group_report.md`
