@@ -67,7 +67,7 @@ Bối cảnh: tôi là học viên chương trình AI20k (K5 · Level 3), mỗi 
 Quy trình nháp hiện tại:
 
 ```text
-HIỆN TẠI — [cần điền] phút, 1 lần/lab, trong 15' cuối buổi
+HIỆN TẠI — 30-60 phút, 1 lần/lab, trong 15' cuối buổi
 
 [1. Mở bảng "Dùng AI": __'] → [2. Nhớ checkpoint nào đã dùng AI: __']
 → [3. Lục lịch sử chat từng app: __'] ← BOTTLENECK
@@ -94,7 +94,7 @@ HIỆN TẠI — [cần điền] phút, 1 lần/lab, trong 15' cuối buổi
 Quy trình nháp hiện tại:
 
 ```text
-HIỆN TẠI — [cần điền] phút cho mỗi mục báo cáo
+HIỆN TẠI — 10 phút cho mỗi mục báo cáo
 
 [1. Mở template: __'] → [2. Đọc CHECKPOINTS: __'] → [3. Đọc worksheet: __']
 → [4. Đối chiếu RUBRIC: __'] ← BOTTLENECK (gom yêu cầu từ nhiều file)
